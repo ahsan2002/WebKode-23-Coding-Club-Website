@@ -12,6 +12,9 @@ const Competions = () => {
                 <div className="cards">
                         <div className="card">
                            <h4>Speed Programming</h4>
+                           <p>
+                           When it comes to developing a really working software solution, frontend comes first.
+                           </p>
                         </div>
                         <div className="card">
                         <h4>Speed Debugging</h4>
