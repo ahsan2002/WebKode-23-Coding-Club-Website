@@ -1,6 +1,6 @@
 import React from 'react'
-import ImageCarousel from './Components/Home Components/ImageCarousel'
-import Competions from './Components/Home Components/Competions'
+import ImageCarousel from './Components/HomeComponents/Carousel/ImageCarousel'
+import Competions from './Components/HomeComponents/Competitions/Competions'
 
 const App = () => {
   return (
