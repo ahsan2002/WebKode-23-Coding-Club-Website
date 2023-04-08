@@ -11,7 +11,8 @@ header {
 }
 
 .logo {
-    height: 12rem;
+    height: 10rem;
+    margin-bottom: 0.5rem;
     width: auto;
 }
 
@@ -21,7 +22,7 @@ header {
 /* ul */
 .navbar-lists {
     display: flex;
-    gap: 4.8rem;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -30,7 +31,7 @@ header {
 .navbar-link:visited {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #212529;

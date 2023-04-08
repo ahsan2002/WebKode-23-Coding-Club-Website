@@ -20,12 +20,24 @@ const Navbar = () => {
                                 onClick={() => { setActiveMenu(false) }}>About</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/products' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Products</NavLink>
+                            <NavLink to='/blogs' className='navbar-link home-link'
+                                onClick={() => { setActiveMenu(false) }}>Blogs</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/contact' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Contact</NavLink>
+                            <NavLink to='/events' className='navbar-link home-link'
+                                onClick={() => { setActiveMenu(false) }}>Events</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/gallery' className='navbar-link home-link'
+                                onClick={() => { setActiveMenu(false) }}>Gallery</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/team' className='navbar-link home-link'
+                                onClick={() => { setActiveMenu(false) }}>Team</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/contactus' className='navbar-link home-link'
+                                onClick={() => { setActiveMenu(false) }}>Contact Us</NavLink>
                         </li>
                     </ul>
 
