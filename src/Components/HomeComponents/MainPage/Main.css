@@ -2,48 +2,59 @@
 
 
 
-.main{
+.main {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 200px;
-  height: 100vh;
+  height: 87vh;
   font-family: 'Poppins', sans-serif;
-  background-image:url('https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp');
+  background-image: url('https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp');
   background-position: center;
-background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.my-btn{
+.my-btn {
   color: white;
-  background-color: #6c63ff;
+  background: linear-gradient(193deg, #c738d8, #7c32ff);
   border-radius: 30px;
   padding: 10px 25px;
   margin-top: 15px;
-  border: none;
- width:10rem;
+  border: 1px solid #c738d8;
+  outline: none;
+  width: 13rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: width 1.4s ease;
 }
 
-.intro{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.intro h1{
-    font-size: 5rem;
-}
-.intro p{
-    font-size: 1.5rem;
-}
-
-.my-btn:hover{
+.my-btn:hover {
   cursor: pointer;
+  background: linear-gradient(193deg, #7c32ff, #c738d8);
+  width: 100%;
 }
 
-.myimg img{
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: #fff;
+  margin-bottom: 90px;
+}
+
+.intro h1 {
+  font-size: 5rem;
+}
+
+.intro p {
+  font-size: 1.4rem;
+}
+
+
+.myimg img {
   width: 400px;
   height: 400px;
 }
@@ -52,12 +63,25 @@ background-repeat: no-repeat;
 
 @media only screen and (max-width: 768px) {
 
-  .main{
-    gap: 10px;
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 4.5rem !important;
   }
-  .myimg img{
-    width: 400px;
-    height:300px;
+
+  .intro {
+    margin-top: -140px;
+    margin-bottom: 0px !important;
+  }
+
+  .myimg {
+    margin-top: -35px;
+  }
+
+  .myimg img {
+    width: 345px;
+    height: 270px;
   }
 
 
