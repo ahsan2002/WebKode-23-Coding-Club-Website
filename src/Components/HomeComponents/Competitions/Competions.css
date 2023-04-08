@@ -1,5 +1,11 @@
 /* .main{
     text-align: center;
+    background-image: url(https://template66520.motopreview.com/mt-demo/66500/66520/mt-content/uploads/2018/03/mt-1245-content-bg03.jpg
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:100px;
 }
 
 .cards{
@@ -7,8 +13,97 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
+
+.card{
+    background: transparent;
+    border: none;
+}
+
+
 
 .card p{
     text-align: justify;
 } */
+
+
+.work-container {
+    /* margin-top: -3.8rem; */
+    width: 80vw;
+    padding: 5rem 1rem !important;
+}
+
+.work-container .main-heading {
+    font-size: 2.7rem;
+    font-weight: bolder;
+    margin-bottom: 3rem !important;
+    word-spacing: 0rem;
+}
+
+.work-section {
+    padding: 0 3.2rem !important;
+}
+
+.work-container-subdiv {
+    padding: 0 0rem !important;
+
+}
+
+
+.work-container {
+    width: 80vw;
+    padding: 5rem !important;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+    /* margin-top: -8rem; */
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.work-container .main-heading {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2.6rem;
+    word-spacing: 0.7rem;
+}
+
+.work-container-subdiv {
+    padding: 0 2rem !important;
+}
+
+
+.work-container .sub-heading {
+    font-size: 2.2rem;
+    /* font-weight: normal; */
+}
+
+.main-work-para {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 2rem 0 2.2rem 0;
+    font-weight: lighter;
+    width: 76%;
+    /* text-align: justify ; */
+}
+
+.fontawesome-style {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--bgcolor);
+    /* display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 2rem auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.1rem auto 3.1rem auto;
+    cursor: pointer;
+}
+
+.fontawesome-style:hover {
+    box-shadow: 0.3rem 0.3rem 1.4rem rgba(0, 0, 0, 0.1);
+}
