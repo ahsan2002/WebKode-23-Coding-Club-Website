@@ -1,11 +1,14 @@
 import React from 'react'
-import Header from '../Navbar/Header'
+import Layout from '../../Layout'
 import Main from './MainPage/Main'
+import GrowthSection from './GrowthSection'
 const index = () => {
     return (
         <>
-            <Header />
-            <Main/>
+            <Layout>
+                <Main />
+                <GrowthSection />
+            </Layout>
         </>
     )
 }

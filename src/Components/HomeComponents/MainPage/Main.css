@@ -27,6 +27,7 @@
   width: 13rem;
   font-size: 1.5rem;
   font-weight: 500;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: width 1.4s ease;
 }
 
