@@ -1,15 +1,17 @@
 import React from 'react'
-import Header from '../Navbar/Header'
+import Layout from '../../Layout'
 import Main from './MainPage/Main'
-import About from './AboutComponent/About'
+import GrowthSection from './GrowthSection'
 import Competions from './Competitions/Competions'
 const index = () => {
     return (
         <>
-            <Header />
-            <Main/>
-            {/* <About/> */}
-            <Competions/>
+            <Layout>
+                <Main />
+                <GrowthSection />
+                <Competions/>
+
+            </Layout>
         </>
     )
 }
