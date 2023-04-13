@@ -47,13 +47,13 @@ const About = () => {
                     <img src="/Images/about.png" alt="" />
                 </div>
 
-                <div className="content">
-
                     <div className="menu-tab">
                         <div  onClick={() => filterItem('about')}> <h2>About Us</h2> </div>
                         <div  onClick={() => filterItem('mission')}><h2>Our Mission</h2></div>
                         <div  onClick={() => filterItem('vision')}><h2>Our Vision</h2></div>
                     </div>
+                <div className="content">
+
 
                      {
                         item.map((elem) => {
