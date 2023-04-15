@@ -6,15 +6,15 @@ const Index = () => {
     return (
         <>
             <div className="container-fluid footer">
-                <div className="row bg-dark justify-content-evenly text-white pt-4 pb-5">
+                <div className="row  justify-content-evenly text-white pt-4 pb-5">
                     <div className="col-lg-3 col-mg-3 col-10 pt-5">
                         {/* <!-- <h1 className="justify-content-center align-items-center d-flex">STF</h1> --> */}
                         <div className="d-flex justify-content-center align-items-center">
                             <img className=" " src={"./images/logo.png"} alt=""
                                 width="55%" height="55%" />
                         </div>
-                        <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission! </h3>
-                        <p style={{ fontSize: "1.6rem", fontWeight: "600" }}>first Nedian youth charity organization who serve for Reward and nation</p>
+                        <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission</h3>
+                        <p style={{ fontSize: "1.6rem", fontWeight: "600" }}>We are a Community of Coding Enthusiasts</p>
                         <p className="pera-top"
                             style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "justify" }}>The legal definition of a charitable
                             organization (and of charity) varies between countries and in some instances regions of the country. The
@@ -42,11 +42,17 @@ const Index = () => {
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3 pt-5">Support On</h3>
                         <div className="justify-content-center align-items-center d-flex"
                             style={{ fontSize: "2rem", gap: "1rem" }}>
+                                <a href="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL" target='_blank'>
                             <i className="footer-icon bi bi-facebook mx-3 pb-4 pt-2"></i>
-                            <i className="footer-icon bi bi-twitter mx-3 pb-4 pt-2"></i>
+                                </a>
+                                <a href="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D" target='_blank'>
                             <i className="footer-icon bi bi-instagram mx-3 pb-4 pt-2"></i>
+                                </a>
+                                <a href="" target='_blank'>
                             <i className="footer-icon bi bi-whatsapp mx-3 pb-4 pt-2"></i>
-                            <i className="footer-icon bi bi-envelope mx-3 pb-4 pt-2"></i>
+                                </a>
+                            {/* <i className="footer-icon bi bi-twitter mx-3 pb-4 pt-2"></i> */}
+                            {/* <i className="footer-icon bi bi-envelope mx-3 pb-4 pt-2"></i> */}
                         </div>
                         <div className="justify-content-center align-items-center d-flex">
                             <button
@@ -61,14 +67,12 @@ const Index = () => {
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Contact Us</h3>
                         <div className='thirdCol-inner-div'>
                             <i className="bi bi-telephone pe-2"></i> 0315-8951125<br />
-                            <i className="bi bi-envelope pe-2"></i> daniyalshiekh166@gmail.com<br />
+                            <i className="bi bi-envelope pe-2"></i> koder_club@gmail.com<br />
                             <i className="bi bi-globe pe-2"></i> STForce.surge.sh<br />
-                            <i className="bi bi-geo-alt pe-2"></i> Main University Rd, NED University Of Engineering & Technology, Karachi,
+                            <i className="bi bi-geo-alt pe-2"></i>CSIT Department,Main University Rd, NED University Of Engineering & Technology, Karachi,
                             Karachi City, Sindh 75270
                             <iframe className="d-flex my-4 mx-auto"
-                                title='Address'
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14472.265542248591!2d67.1148314!3d24.9298083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf864ed97b4a8ec0e!2sNED%20University%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2s!4v1633876559237!5m2!1sen!2s"
-                                width="90%" height="230" style={{ borderRadius: "16px", border: "0" }} allowFullScreen="" loading="lazy"></iframe>
+                                title='Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0343930461104!2d67.11112897486885!3d24.93089824243632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338bf66073b67%3A0x2a472ce9ccfc811a!2sCSIT%20Department!5e0!3m2!1sen!2sus!4v1681510766636!5m2!1sen!2sus" width="90%" height="230" style={{ borderRadius: "16px", border: "0" }} allowFullScreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>

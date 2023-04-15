@@ -5,6 +5,13 @@
 
 }
 
+.footer {
+    background: url('https://preview.colorlib.com/theme/edumark/img/banner/footer_bg.png.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .footer-h3 {
     font-size: 2.9rem;
 }

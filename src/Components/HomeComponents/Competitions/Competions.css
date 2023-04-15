@@ -50,9 +50,10 @@ main{
   transition: opacity 0.3s ease-out;
 }
 .card p {
-  inset: auto auto 80px 30px;
+  inset: auto auto 60px 30px;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 .card a {
   inset: auto auto 40px 30px;
@@ -60,7 +61,7 @@ main{
   text-decoration: none;
 }
 .card:hover h2 {
-  inset: auto auto 220px 30px;
+  inset: auto auto 280px 30px;
   transition: inset 0.3s ease-out;
 }
 .card:hover p, .card:hover a {
@@ -69,7 +70,7 @@ main{
 }
 .card:hover img {
   transition: opacity 0.3s ease-in;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .material-symbols-outlined {
