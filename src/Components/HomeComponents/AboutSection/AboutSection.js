@@ -41,7 +41,7 @@ const AboutSection = () => {
     return (
         <section className="container-fluid main-about-container"
             style={{ paddingLeft: "0px" }}>
-            <div className="row">
+            <div className="row about-row" >
                 <div className='col-12 col-lg-6 col-md-6 d-flex justify-content-center align-items-center order-md-first order-sm-first mx-auto'
                     style={{ paddingLeft: "0px" }}>
                     <div className="about-img-div">
@@ -49,8 +49,8 @@ const AboutSection = () => {
                     </div>
                 </div>
                 {/*  --------------- main header right side--------------  */}
-                <div className='col-12 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center  align-items-center order-lg-first order-last mx-auto'
-                    style={{ gap: "25px" }}>
+                <div className='col-12 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center  align-items-center order-lg-first order-last mx-auto
+                about-right-col'>
 
                     <div className="menu-tab">
                         <h2 onClick={() => filterItem('about')} className='menu-tab-h2'>About Us</h2>
