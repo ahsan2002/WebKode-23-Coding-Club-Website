@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomeComponent from './Components/HomeComponents'
-// import AboutComponent from './Components/AboutComponent'
+import AboutComponent from './Components/AboutComponent'
 import BlogComponent from './Components/BlogComponent'
 import EventComponent from './Components/EventComponent'
 import GalleryComponent from './Components/GalleryComponent'
@@ -15,10 +15,10 @@ const App = () => {
       path: '/',
       element: <HomeComponent />
     },
-    // {
-    //   path: '/about',
-    //   element: <AboutComponent />
-    // },
+    {
+      path: '/about',
+      element: <AboutComponent />
+    },
     {
       path: '/blogs',
       element: <BlogComponent />
