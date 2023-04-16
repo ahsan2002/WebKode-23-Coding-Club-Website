@@ -4,25 +4,21 @@
 }
 
 
-.contact-leftside{
+.contact-leftside {
     margin-bottom: 3rem;
 }
 
-.contact-leftside p{
+.contact-leftside p {
     font-size: 1.5rem;
 }
 
 
 .contact-leftside img {
-    /* min-width: 80%; */
-    width: 50%;
-    max-height: 22em;
+    width: 60%;
     height: auto;
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
-    border-radius: 1.5rem;
 }
 
-.my_input{
+.my_input {
     margin-bottom: 0.5rem;
     width: 100%;
     padding: 1em 0 12px;
@@ -40,10 +36,10 @@
     transform: scaleX(1) translateY(-2px);
     opacity: 1;
     border-bottom: none;
-} 
+}
 
 
-.my_input:focus + .separator{
+.my_input:focus+.separator {
     transform: scaleX(1) translateY(-2px);
     opacity: 1;
 }
@@ -56,16 +52,20 @@
     transform: scaleX(0) translateY(-2px);
     transform-origin: 50%;
     opacity: 0;
-    transition: all 0.15s linear;
-  }
+    transition: all 0.25s linear;
+}
 
 
-.mainheading{
+.mainheading {
     text-transform: capitalize;
     font-weight: bold;
     font-size: 3.8rem;
     margin-bottom: 5rem;
 
+}
+
+.main-heading {
+    font-size: 2.5rem;
 }
 
 
@@ -95,7 +95,7 @@
     font-weight: lighter;
     width: 75%;
     padding: 0 2rem !important;
-    text-align:start;
+    text-align: start;
 }
 
 .mybtn {

@@ -2,14 +2,17 @@
     height: 80vh;
     display: flex;
     /* background-color: blueviolet; */
+    /* background: url('C:\Users\DANIYAL\Desktop\WebKode-23-Coding-Club-Website\public\images\about-bg-1.jpeg'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.419), rgba(65, 61, 61, 0.55)), url('C:\Users\DANIYAL\Desktop\WebKode-23-Coding-Club-Website\public\images\about-bg-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff !important;
 }
 
 .about-img-div {
     width: 100%;
-    background: url('/public/Images/about_bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background: url('C:\Users\DANIYAL\Desktop\WebKode-23-Coding-Club-Website\public\images\about_bg.png'); */
     /* border-radius: 100%; */
     display: flex;
     justify-content: center;
@@ -18,7 +21,7 @@
 
 .about-img-div img {
     animation: float 2.5s ease infinite;
-    margin-bottom: 2.8rem;
+    /* margin-bottom: 2.8rem; */
 }
 
 @keyframes float {
@@ -54,7 +57,7 @@
     content: "";
     height: 2px;
     width: 0%;
-    background-color: black;
+    background-color: #fff;
     display: block;
     transition: 0.5s ease-in-out;
 }
@@ -64,9 +67,9 @@
     height: 2.5px;
     border-radius: 2px;
     width: 100%;
-    background-color: black;
+    background-color: #fff;
     display: block;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .main-about-heading {
