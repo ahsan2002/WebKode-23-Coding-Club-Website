@@ -1,13 +1,43 @@
-.comp_main{
+.comp_main {
   /* background: linear-gradient(193deg, #c738d8, #7c32ff); */
-  text-align: center;
+  /* text-align: center; */
   padding: 2rem;
 
 }
 
-main{
+.main_card {
   display: flex;
-  /* flex-direction: column; */
+  width: 29rem;
+  flex-direction: column;
+  height: 40rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  gap: 26px;
+  padding: 4rem 2rem 4rem 2rem;
+  background: linear-gradient(193deg, #7c32ff, #c738d8);
+}
+
+
+.main_card h2 {
+  font-size: 2.5rem;
+  text-transform: ulize;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+
+}
+
+.main_card p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -17,17 +47,46 @@ main{
   flex-wrap: wrap;
 }
 
+
 .card {
   display: flex;
-  width: 24rem;
-  height: 36rem;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  color: black;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    width: 28rem;
+    height: 40rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    gap: 15px;
+    padding: 2.5rem 3.2rem 2.5rem 3.2rem;
 }
+
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-content h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  
+
+}
+
+.card-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.icon {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
 /* .card img {
   position: absolute;
   object-fit: cover;
