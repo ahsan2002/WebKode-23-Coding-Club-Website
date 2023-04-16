@@ -42,7 +42,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  gap: 5rem;
+  gap: 2.5rem;
   font-family: "Roboto", sans-serif;
   flex-wrap: wrap;
 }
@@ -50,16 +50,16 @@ main {
 
 .card {
   display: flex;
-    width: 28rem;
-    height: 40rem;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    color: black;
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-    gap: 15px;
-    padding: 2.5rem 3.2rem 2.5rem 3.2rem;
+  width: 28rem;
+  height: 40rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: black;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  gap: 15px;
+  padding: 2.5rem 3.1rem 2.5rem 3.1rem;
 }
 
 
@@ -72,7 +72,7 @@ main {
 .card-content h2 {
   font-size: 3.4rem;
   font-weight: 700;
-  
+
 
 }
 
