@@ -8,7 +8,7 @@ const Main = () => {
 
             <div className="intro">
                 <h1>Koder's Club</h1>
-                <p>Lorem ipsum dolor sit amet consectetur <br/>adipisicing elit. Voluptatibus magnam cum <br/>corrupti ut ab quibusdam assumenda deserunt,</p>
+                <p>Official Community of The Department of <br/> Computer Science & Information Technology, NEDUET</p>
 
                 <button className='my-btn'>Join Us</button>
             </div>

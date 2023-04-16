@@ -13,7 +13,7 @@ const AboutSection = () => {
             id: 1,
             heading: "Pioneers of a highly ambitious AI society for the Pakistani youth",
             category: "about",
-            description: "Founded in 2016, the AI CLUB is a derivative of the research centre for Artificial intelligence at NEDUET. Established by a group of undergraduate students of NED University, the club is all about artificial intelligence. Integrating several teams having a diverse set of skills, the AI club brings together all the ideas and individuals passionate about AI technology. We hold ourselves true to the promise of enlightening the young enthusiasts and encouraging emerging startups. The AI club organizes various events including; seminars, workshops, and boot camps featuring researchers and innovators shedding light upon topics such as Machine Learning, Deep Learning, data analysis, entrepreneurship, and robotic automation etc. "
+            description: "Founded in 2021, the AI CLUB is a derivative of the research centre for Artificial intelligence at NEDUET. Established by a group of undergraduate students of NED University, the club is all about artificial intelligence. Integrating several teams having a diverse set of skills, the AI club brings together all the ideas and individuals passionate about AI technology. We hold ourselves true to the promise of enlightening the young enthusiasts and encouraging emerging startups. The AI club organizes various events including; seminars, workshops, and boot camps featuring researchers and innovators shedding light upon topics such as Machine Learning, Deep Learning, data analysis, entrepreneurship, and robotic automation etc. "
         },
 
         {
@@ -41,7 +41,7 @@ const AboutSection = () => {
     return (
         <section className="container-fluid main-about-container"
             style={{ paddingLeft: "0px" }}>
-            <div className="row">
+            <div className="row about-row" >
                 <div className='col-12 col-lg-6 col-md-6 d-flex justify-content-center align-items-center order-md-first order-sm-first mx-auto'
                     style={{ paddingLeft: "0px" }}>
                     <div className="about-img-div">
@@ -49,8 +49,8 @@ const AboutSection = () => {
                     </div>
                 </div>
                 {/*  --------------- main header right side--------------  */}
-                <div className='col-12 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center  align-items-center order-lg-first order-last mx-auto'
-                    style={{ gap: "25px" }}>
+                <div className='col-12 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center  align-items-center order-lg-first order-last mx-auto
+                about-right-col'>
 
                     <div className="menu-tab">
                         <h2 onClick={() => filterItem('about')} className='menu-tab-h2'>About Us</h2>

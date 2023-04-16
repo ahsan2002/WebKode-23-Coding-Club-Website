@@ -7,7 +7,7 @@ const Index = () => {
         <>
             <div className="container-fluid footer">
                 <div className="row  justify-content-evenly text-white pt-4 pb-5">
-                    <div className="col-lg-3 col-mg-3 col-10 pt-5">
+                    <div className="col-lg-3 col-mg-3 col-10 pt-0">
                         {/* <!-- <h1 className="justify-content-center align-items-center d-flex">STF</h1> --> */}
                         <div className="d-flex justify-content-center align-items-center">
                             <img className=" " src={"./images/logo.png"} alt=""

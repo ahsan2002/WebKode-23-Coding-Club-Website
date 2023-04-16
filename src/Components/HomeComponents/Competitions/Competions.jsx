@@ -26,13 +26,17 @@ const Competions = () => {
 
 return (
    <>
+   <div className='comp_main'>
+      <h2 className="mainheading">Competitions Disciplines</h2>
+
      <main>
    {
-    data.map((h=>{
-      return (
-
-  <div class = "card">
-    <img src={h.img} alt=""/>
+     data.map((h=>{
+       return (
+         
+         <div class = "card">
+    <img src={h.img} alt=""  />
+    
     <div class="card-content">
       <h2>
         {h.heading}
@@ -49,6 +53,7 @@ return (
     }))
   }
   </main>
+  </div>
    </>
 )
 }

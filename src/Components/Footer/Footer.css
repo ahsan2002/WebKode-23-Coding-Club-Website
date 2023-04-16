@@ -43,24 +43,24 @@
 }
 
 .my-btn-F {
-    /* color: white; */
-    color: #c738d8;
-    /* background: linear-gradient(193deg, #c738d8, #7c32ff); */
-    border-radius: 30px;
-    padding: 10px 25px;
-    margin-top: 15px;
-    border: 1px solid #c738d8;
-    outline: none;
-    width: 14rem !important;
-    font-size: 1.5rem;
-    font-weight: 500;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: width 0.5s ease-out;
+    color: white;
+  background: linear-gradient(193deg, #c738d8, #7c32ff);
+  border-radius: 30px;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border: 1px solid #c738d8;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: width 1.4s ease;
+width: 14rem !important;
+font-size: 1.5rem;
 }
 
 .my-btn-F:hover {
     cursor: pointer;
-    border: 1px solid #c738d8;
-    /* background: linear-gradient(193deg, #7c32ff, #c738d8); */
+    /* border: 1px solid #c738d8; */
+    background: linear-gradient(193deg, #7c32ff, #c738d8);
     width: 60% !important;
 }

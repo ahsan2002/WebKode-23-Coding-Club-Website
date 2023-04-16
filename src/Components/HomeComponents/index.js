@@ -5,6 +5,7 @@ import GrowthSection from './GrowthSection'
 import Competions from './Competitions/Competions'
 import AboutSection from './AboutSection/AboutSection'
 import Contact from './ContactComponent/Contact'
+import SponserSection from './SponserSection/SponserSection'
 const index = () => {
     return (
         <>
@@ -13,6 +14,7 @@ const index = () => {
                 <GrowthSection />
                 <AboutSection />
                 <Competions/>
+                <SponserSection />
                 <Contact/>
 
             </Layout>

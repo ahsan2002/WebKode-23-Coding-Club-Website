@@ -27,6 +27,11 @@
     }
 }
 
+
+.about-right-col {
+    gap: 25px;
+}
+
 .menu-tab {
     display: flex;
     justify-content: flex-start;
@@ -79,4 +84,33 @@
     /* width: 76%; */
     width: 80%;
     text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-about-container {
+        height: auto;
+    }
+
+    .about-img-div img {
+        width: 240px;
+    }
+
+    .about-row {
+        gap: 34px;
+    }
+
+    .about-right-col {
+        gap: 12px;
+    }
+
+    .menu-tab {
+        justify-content: center;
+    }
+
+    .menu-tab-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }

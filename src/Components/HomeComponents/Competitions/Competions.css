@@ -1,3 +1,10 @@
+.comp_main{
+  /* background: linear-gradient(193deg, #c738d8, #7c32ff); */
+  text-align: center;
+  padding: 2rem;
+
+}
+
 main{
   display: flex;
   /* flex-direction: column; */
@@ -18,10 +25,10 @@ main{
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  color: #f0f0f0;
+  color: black;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
-.card img {
+/* .card img {
   position: absolute;
   object-fit: cover;
   width: 100%;
@@ -30,6 +37,7 @@ main{
   left: 0;
   opacity: 0.9;
   transition: opacity 0.2s ease-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.419), rgba(65, 61, 61, 0.97));
 }
 .card h2 {
   position: absolute;
@@ -39,9 +47,10 @@ main{
   font-family: "Roboto Condensed", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  /* color: black; */
+  color: black;
   font-weight: bold;
   font-size: 2rem;
+  text-align: left;
 }
 .card p, .card a {
   position: absolute;
@@ -50,10 +59,11 @@ main{
   transition: opacity 0.3s ease-out;
 }
 .card p {
-  inset: auto auto 60px 30px;
+  inset: auto auto 60px 20px;
   font-weight: bold;
   font-size: 1.2rem;
   text-align: justify;
+  color: black;
 }
 .card a {
   inset: auto auto 40px 30px;
@@ -61,7 +71,7 @@ main{
   text-decoration: none;
 }
 .card:hover h2 {
-  inset: auto auto 280px 30px;
+  inset: auto auto 280px 20px;
   transition: inset 0.3s ease-out;
 }
 .card:hover p, .card:hover a {
@@ -76,3 +86,14 @@ main{
 .material-symbols-outlined {
   vertical-align: middle;
 }
+
+
+@media only screen and (max-width: 768px) {
+
+ .card:hover h2 {
+    inset: auto auto 230px 20px;
+    transition: inset 0.3s ease-out;
+  }
+
+
+} */

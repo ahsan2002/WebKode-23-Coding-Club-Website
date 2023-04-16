@@ -82,8 +82,12 @@
     position: absolute;
     /* top: 70px;
     right: 55px; */
-    top: 22px;
-    right: 142px;
+    /* second */
+    /* top: 22px;
+    right: 142px; */
+    /* third */
+    top: -18px;
+    right: 130px;
     background: #5DB2FF;
     opacity: .7;
     display: flex;
@@ -98,7 +102,9 @@
 
     position: absolute;
     /* bottom: 36px; */
-    bottom: 70px;
+    /* bottom: 70px; */
+    right: 140px;
+    bottom: 100px;
     background: #04D2C8;
     opacity: .5;
     display: flex;
@@ -134,8 +140,8 @@
 @media only screen and (max-width: 768px) {
 
     .circle-first {
-        top: 48px;
-        left: -25px;
+        top: 54px;
+        left: -12px;
         width: 20rem;
         height: 20rem;
     }
@@ -151,7 +157,7 @@
 
     .circle-third {
         top: 14px;
-        right: -40px;
+        right: -18px;
         width: 22rem;
         height: 22rem;
     }
