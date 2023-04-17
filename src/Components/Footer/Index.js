@@ -16,9 +16,7 @@ const Index = () => {
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission</h3>
                         <p style={{ fontSize: "1.6rem", fontWeight: "600" }}>We are a Community of Coding Enthusiasts</p>
                         <p className="pera-top"
-                            style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "justify" }}>The legal definition of a charitable
-                            organization (and of charity) varies between countries and in some instances regions of the country. The
-                            regulation, the tax treatment, and the way in which charity law affects charitable organizations also vary.
+                            style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "justify" }}>A community of like-minded individuals who share a passion for coding. We believe that learning is a lifelong process, and that's why we encourage our members to explore new ideas and technologies.
                         </p>
                         <div className="justify-content-center align-items-center d-flex">
                             <button type="button" className=" my-btn-F btn  px-4"

@@ -13,7 +13,7 @@ const AboutSection = () => {
             id: 1,
             heading: "Pioneers of a highly ambitious AI society for the Pakistani youth",
             category: "about",
-            description: "Founded in 2021, the AI CLUB is a derivative of the research centre for Artificial intelligence at NEDUET. Established by a group of undergraduate students of NED University, the club is all about artificial intelligence. Integrating several teams having a diverse set of skills, the AI club brings together all the ideas and individuals passionate about AI technology. We hold ourselves true to the promise of enlightening the young enthusiasts and encouraging emerging startups. The AI club organizes various events including; seminars, workshops, and boot camps featuring researchers and innovators shedding light upon topics such as Machine Learning, Deep Learning, data analysis, entrepreneurship, and robotic automation etc. "
+            description: "Founded on March 15, 2021, with the goal of providing a platform for coding enthusiasts to learn, share, and grow together.We're proud to host a variety of competitions that challenge our members to improve their coding skills. From speed debugging to UI/UX design, We offer something for everyone. Our competitions are designed to help our members hone their skills in problem-solving, logic, and programming, so they can excel in their careers But our coding club is much more than just a place to compete."
         },
 
         {
