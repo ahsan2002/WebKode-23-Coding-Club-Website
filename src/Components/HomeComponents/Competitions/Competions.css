@@ -60,12 +60,6 @@ main {
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   gap: 15px;
   padding: 2.5rem 3.1rem 2.5rem 3.1rem;
-  transition: all 0.5s linear;
-}
-
-.card:hover{
-
-  background: linear-gradient(193deg, #7c32ff, #c738d8);
 }
 
 

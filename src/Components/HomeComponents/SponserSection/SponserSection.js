@@ -31,8 +31,8 @@ const SponserSection = () => {
         <section className="container-fluid section-sponser">
             <h2 className="text-center main-sponser-heading">Our Sponsers</h2>
             <Slider className="customer-logos slider" {...settings}>
-                <div className="slide"><img src="./images/adidas.png" alt="logo" /></div>
-                <div className="slide"><img src="./images/facebook.png" alt="logo" /></div>
+                <div className="slide"><img src="./images/octdaily.png" alt="logo" /></div>
+                <div className="slide"><img src="./images/ned.png" alt="logo" /></div>
                 <div className="slide"><img src="./images/google.png" alt="logo" /></div>
                 <div className="slide"><img src="./images/instagram.png" alt="logo" /></div>
                 <div className="slide"><img src="./images/nike.png" alt="logo" /></div>

@@ -11,20 +11,20 @@ const AboutSection = () => {
     const Menu = [
         {
             id: 1,
-            heading: "Pioneers of a highly ambitious AI society for the Pakistani youth",
+            heading: "Pioneers of a highly ambitious Coding society for the Pakistani youth",
             category: "about",
             description: "Founded on March 15, 2021, with the goal of providing a platform for coding enthusiasts to learn, share, and grow together.We're proud to host a variety of competitions that challenge our members to improve their coding skills. From speed debugging to UI/UX design, We offer something for everyone. Our competitions are designed to help our members hone their skills in problem-solving, logic, and programming, so they can excel in their careers But our coding club is much more than just a place to compete."
         },
 
         {
             id: 2,
-            heading: "Mentoring and training the young AI innovators ",
+            heading: "Mentoring and training the young generation of Coders",
             category: "mission",
-            description: 'We are a community of coding enthusiasts who are passionate about coding and love to share our knowledge with others. Our mission is to create a platform where people can come together to learn, grow, and compete in coding competitions. We believe that by providing a supportive and collaborative environment, we can help people of all skill levels improve their coding skills and achieve their goals. Our team of experienced programmers and designers are dedicated to creating high-quality competitions and resources that will help you take your coding skills to the next level. '
+            description: 'Our mission is to create a platform where people can come together to learn, grow, and compete in coding competitions. We believe that by providing a supportive and collaborative environment, we can help people of all skill levels improve their coding skills and achieve their goals. Our team of experienced programmers and designers are dedicated to creating high-quality competitions and resources that will help you take your coding skills to the next level. '
         },
         {
             id: 3,
-            heading: "Preparing the future generations of Pakistan for the eminent AI REVOLUTION",
+            heading: "Empowering Coders to shape the FUTURE",
             category: "vision",
             description: 'Our vision is to become the go-to destination for coding enthusiasts around the world. We want to create a platform that is accessible to everyone, regardless of their skill level or background. We believe that by fostering a sense of community and providing high-quality coding competitions and resources, we can help people achieve their full potential and make a positive impact in the world. Our goal is to inspire and empower the next generation of coders and innovators, and we are committed to helping you achieve your dreams. '
         },
