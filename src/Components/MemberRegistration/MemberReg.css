@@ -1,0 +1,21 @@
+.regmain{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  height: 50vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(193deg, #c738d8, #7c32ff);
+  /* background-image: url('https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.regmain h2{
+    font-size: 5rem;
+
+}
+
+

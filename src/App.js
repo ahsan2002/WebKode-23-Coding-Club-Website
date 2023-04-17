@@ -7,6 +7,7 @@ import EventComponent from './Components/EventComponent'
 import GalleryComponent from './Components/GalleryComponent'
 import TeamComponent from './Components/TeamComponent'
 import ContactComponent from './Components/ContactComponent'
+import MemberReg from './Components/MemberRegistration/MemberReg'
 
 const App = () => {
   /** Root Routes */
@@ -38,6 +39,10 @@ const App = () => {
     {
       path: '/contactus',
       element: <ContactComponent />
+    },
+    {
+      path: '/member-registration',
+      element: <MemberReg />
     },
   ])
   return (
