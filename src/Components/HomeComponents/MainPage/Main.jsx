@@ -1,23 +1,33 @@
 import React from 'react';
 import './Main.css'
 import { NavLink } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 const Main = () => {
   return (
     <>
       <div className="main">
 
-        <div className="intro">
-          <h1>Koderz Club</h1>
-          <p>Official Community of The Department of <br /> Computer Science & Information Technology, NEDUET</p>
-          <NavLink to='/member-registration'
-          ><button className='my-btn'>Join Us</button>
-          </NavLink>
-        </div>
+        <Fade right>
+          <div className="intro">
+            <h1>Koderz Club</h1>
+            <p>Official Community of The Department of <br /> Computer Science & Information Technology, NEDUET</p>
+            <Fade bottom>
 
-        <div className="myimg">
-          <img src="https://preview.colorlib.com/theme/edumark/img/banner/edu_ilastration.png.webp" alt="" />
-        </div>
+              <NavLink to='/member-registration'
+              ><button className='my-btn'>Join Us</button>
+              </NavLink>
+            </Fade>
+          </div>
+        </Fade>
+
+
+        <Fade left>
+
+          <div className="myimg">
+            <img src="https://preview.colorlib.com/theme/edumark/img/banner/edu_ilastration.png.webp" alt="" />
+          </div>
+        </Fade>
 
       </div>
     </>

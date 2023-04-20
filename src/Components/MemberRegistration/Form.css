@@ -1,0 +1,128 @@
+.member_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #dfdfdf;
+}
+
+.contactus-section {
+    margin: 5rem 0 10rem 0;
+    text-align: center;
+}
+
+
+.member_reg_rightside {
+    margin-bottom: 3rem;
+    margin-top: 120px;
+}
+
+.member_reg_rightside p {
+    font-size: 1.5rem;
+}
+
+
+.member_reg_rightside img {
+    width: 60%;
+    height: auto;
+}
+
+.my_input {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 1em 0 12px;
+    padding-left: 0;
+    background: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+
+.my_input:focus {
+    transform: scaleX(1) translateY(-2px);
+    opacity: 1;
+    border-bottom: none;
+}
+
+
+.my_input:focus+.separator {
+    transform: scaleX(1) translateY(-2px);
+    opacity: 1;
+}
+
+.separator {
+    height: 3px;
+    width: 100%;
+    background: #b83ce4;
+    display: block;
+    transform: scaleX(0) translateY(-2px);
+    transform-origin: 50%;
+    opacity: 0;
+    transition: all 0.25s linear;
+}
+
+
+.mainheading {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 3.8rem;
+    margin-bottom: 5rem;
+
+}
+
+.main-heading {
+    font-size: 2.5rem;
+}
+
+
+/* .member_reg_leftside form .form-control {
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    font-weight: lighter;
+} */
+
+.member_reg_leftside form .form-check-input {
+    width: 2rem;
+    height: 2rem;
+}
+
+.form-checkbox-style {
+    margin: 4rem 0;
+}
+
+.member_reg_leftside form .main-work-para {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0 !important;
+    font-weight: lighter;
+    width: 75%;
+    padding: 0 2rem !important;
+    text-align: start;
+}
+
+.mybtn {
+    color: white;
+    background: linear-gradient(193deg, #c738d8, #7c32ff);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border: 1px solid #c738d8;
+    outline: none;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: width 1.4s ease;
+}
+
+.mybtn:hover {
+    cursor: pointer;
+    background: linear-gradient(193deg, #7c32ff, #c738d8);
+}

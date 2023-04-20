@@ -1,11 +1,13 @@
 import React from 'react'
-import './GrowthSection.css'
+import './GrowthSection.css';
+import Fade from 'react-reveal/Fade';
 
 const index = () => {
     return (
         <>
             <section className="container main-hero-container">
                 <div className="row">
+                <Fade left>
                     <div className='col-10 col-lg-7 col-md-7 d-flex justify-content-center align-items-center main-herosection-images order-md-first order-sm-first mx-auto'>
 
                         <div className='circle-first'>
@@ -27,7 +29,9 @@ const index = () => {
                             </div>
                         </div>
                     </div>
+                </Fade>
                     {/*  --------------- main header right side--------------  */}
+                    <Fade right>
                     <div className='col-12 col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center flex-column align-items-start order-lg-first order-last mx-auto'>
                         <h1 className="display-3">
                             Over 20+ Competitions<br />
@@ -42,6 +46,7 @@ const index = () => {
                         <h3>Get early access for you</h3>
                         <button className='my-btn-G'>Register</button>
                     </div>
+                    </Fade>
 
                 </div>
             </section>
