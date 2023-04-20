@@ -1,0 +1,34 @@
+.ss {
+  /* box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3); */
+  background-color: #fff !important;
+}
+
+.regmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #7B33FD, #8332FD, #b83ce4) !important;
+}
+
+.regmain h2 {
+  font-size: 5rem;
+  color: #fff;
+
+}
+
+.regmain img {
+  padding-bottom: 6rem;
+  width: 33rem;
+}
+
+
+.blog-col {
+  padding: 6rem 0px;
+}
+
+.blog-right-col {
+  padding: 10rem 0rem;
+}
