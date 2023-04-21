@@ -1,11 +1,12 @@
 import React from 'react'
 import './Card.css'
+import { NavLink } from 'react-router-dom'
 
 const CardBlog = () => {
     return (
         <>
-            <div className='blog-card-div'>
-                <div className='blog-card-img-div'>
+            <NavLink className='blog-card-div'>
+                <div className='blog-card-img-div card-data--img'>
                     <img className=' img-fluid' src="./images/blog-1.jpeg" alt="" />
                 </div>
                 <div className='blog-card-content'>
@@ -27,7 +28,7 @@ const CardBlog = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </NavLink>
         </>
     )
 }

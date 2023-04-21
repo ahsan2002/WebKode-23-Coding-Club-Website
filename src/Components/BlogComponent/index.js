@@ -4,6 +4,9 @@ import './BlogComponent.css'
 import Layout from '../../Layout/index'
 import CardBlog from './CardBlog/CardBlog'
 import Category from './Cateogy/Category'
+import RecentPost from './RecentPost/RecentPost'
+import SearchBarBlog from './SearchBarBlog/SearchBarBlog'
+import TagCloud from './TagCloud/TagCloud'
 
 const index = () => {
     return (
@@ -20,11 +23,13 @@ const index = () => {
                                 <CardBlog />
                                 <CardBlog />
                                 <CardBlog />
+                                <CardBlog />
                             </div>
                             <div class="blog-right-col col-10 col-lg-4 col-md-4 mx-auto">
-                                <div>
-                                    <Category />
-                                </div>
+                                <SearchBarBlog />
+                                <Category />
+                                <RecentPost />
+                                <TagCloud />
                             </div>
                         </div>
                     </div>
