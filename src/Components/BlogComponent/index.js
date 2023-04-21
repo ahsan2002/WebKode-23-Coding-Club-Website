@@ -25,7 +25,7 @@ const index = () => {
                                 <CardBlog />
                                 <CardBlog />
                             </div>
-                            <div class="blog-right-col col-10 col-lg-4 col-md-4 mx-auto">
+                            <div class="blog-right-col col-11 col-lg-4 col-md-4 mx-auto">
                                 <SearchBarBlog />
                                 <Category />
                                 <RecentPost />

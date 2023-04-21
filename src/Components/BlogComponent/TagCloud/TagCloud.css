@@ -45,3 +45,14 @@
     font-size: 13px;
     text-decoration: none;
 }
+
+.tag-cloud-link:hover {
+    background-color: #b83ce4 !important;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-tag-clouds {
+        width: 100%;
+    }
+}

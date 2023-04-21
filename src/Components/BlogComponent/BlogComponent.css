@@ -32,3 +32,9 @@
 .blog-right-col {
   padding: 10rem 0rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .blog-right-col {
+    padding: 1.5rem 0rem 6rem 0rem;
+  }
+}

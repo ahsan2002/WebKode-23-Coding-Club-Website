@@ -66,3 +66,9 @@
     background: #2E004B !important;
     font-size: 16px !important;
 }
+
+@media only screen and (max-width: 768px) {
+    .main-search-blog {
+        width: 100%;
+    }
+}
