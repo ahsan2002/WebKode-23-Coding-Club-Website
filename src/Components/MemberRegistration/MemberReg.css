@@ -1,14 +1,19 @@
-.regmain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 200px;
-  height: 50vh;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #7B33FD, #8332FD, #b83ce4) !important;
+.member-left-col {
+  padding: 8rem 0rem;
 }
 
-.regmain h2 {
-  font-size: 5rem;
+.member-right-col {
+  padding: 7rem 0rem 8rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .member-left-col {
+    padding: 5rem 0rem 0rem 0rem;
+  }
+
+  .member-right-col {
+    padding: 6rem 0rem 8rem 0rem;
+  }
 }
