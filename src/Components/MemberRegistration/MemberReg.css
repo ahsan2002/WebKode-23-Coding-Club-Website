@@ -1,21 +1,19 @@
-.regmain{
-    display: flex;
+.member-left-col {
+  padding: 8rem 0rem;
+}
+
+.member-right-col {
+  padding: 7rem 0rem 8rem 0rem;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 200px;
-  height: 50vh;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(193deg, #c738d8, #7c32ff);
-  /* background-image: url('https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
-.regmain h2{
-    font-size: 5rem;
+@media only screen and (max-width: 768px) {
+  .member-left-col {
+    padding: 5rem 0rem 0rem 0rem;
+  }
 
+  .member-right-col {
+    padding: 6rem 0rem 8rem 0rem;
+  }
 }
-
-

@@ -28,10 +28,6 @@ const Navbar = () => {
                                 onClick={() => { setActiveMenu(false) }}>Events</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/gallery' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Gallery</NavLink>
-                        </li>
-                        <li>
                             <NavLink to='/team' className='navbar-link home-link'
                                 onClick={() => { setActiveMenu(false) }}>Team</NavLink>
                         </li>

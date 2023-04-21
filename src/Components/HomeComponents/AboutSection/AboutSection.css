@@ -1,8 +1,6 @@
 .main-about-container {
     height: 80vh;
     display: flex;
-    /* background-color: blueviolet; */
-    /* background: url('C:\Users\DANIYAL\Desktop\WebKode-23-Coding-Club-Website\public\images\about-bg-1.jpeg'); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.419), rgba(65, 61, 61, 0.55)), url('../../../../public/images/about-bg-1.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -12,8 +10,6 @@
 
 .about-img-div {
     width: 100%;
-    /* background: url('C:\Users\DANIYAL\Desktop\WebKode-23-Coding-Club-Website\public\images\about_bg.png'); */
-    /* border-radius: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,5 +111,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 10px;
     }
 }

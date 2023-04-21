@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import './AboutSection.css'
+import './AboutSection.css';
+import { Fade } from 'react-reveal';
+import Zoom from 'react-reveal/Zoom';
+
 
 const AboutSection = () => {
 
@@ -42,27 +45,32 @@ const AboutSection = () => {
         <section className="container-fluid main-about-container"
             style={{ paddingLeft: "0px" }}>
             <div className="row about-row" >
+            <Zoom right>
                 <div className='col-12 col-lg-6 col-md-6 d-flex justify-content-center align-items-center order-md-first order-sm-first mx-auto'
                     style={{ paddingLeft: "0px" }}>
                     <div className="about-img-div">
                         <img src="/images/about.png" alt="" />
                     </div>
                 </div>
+                </Zoom>
                 {/*  --------------- main header right side--------------  */}
                 <div className='col-12 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center  align-items-center order-lg-first order-last mx-auto
                 about-right-col'>
 
+                <Fade right>
                     <div className="menu-tab">
                         <h2 onClick={() => filterItem('about')} className='menu-tab-h2'>About Us</h2>
                         <h2 onClick={() => filterItem('mission')} className='menu-tab-h2'>Our Mission</h2>
                         <h2 onClick={() => filterItem('vision')} className='menu-tab-h2'>Our Vision</h2>
                     </div>
+                    </Fade>
 
                     {
                         item.map((elem) => {
                             const { heading, description } = elem;
                             return (
                                 <>
+                                <Fade left>
                                     <div className='menu-tab-div'>
                                         <h1 className="main-about-heading">
                                             {heading}
@@ -71,11 +79,13 @@ const AboutSection = () => {
                                             {description}
                                         </p>
                                     </div>
+                                    </Fade>
                                 </>
                             )
                         })
                     }
                 </div>
+                
 
             </div>
         </section>

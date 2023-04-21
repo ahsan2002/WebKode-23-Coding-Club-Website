@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import Slide from 'react-reveal'
 
 const Contact = () => {
     return (
@@ -10,6 +11,7 @@ const Contact = () => {
                     <div className="row mx-auto">
                         <div className="col-12 col-lg-10 mx-auto">
                             <div className="row mx-auto">
+                            <Slide left >
                                 <div className="col-12 col-lg-5 contact-leftside">
                                     <h3 className="main-heading fw-bold" >
                                         Connect With Our <br />  Team.
@@ -25,6 +27,8 @@ const Contact = () => {
                                         />
                                     </figure>
                                 </div>
+                                </Slide>
+                                <Slide right>
                                 <div className="col-12 col-lg-7 contact-rightside">
                                     <form action='https://formspree.io/f/mdovpvnj' method='POST'>
                                         <div className="row">
@@ -114,6 +118,7 @@ const Contact = () => {
                                         </button>
                                     </form>
                                 </div>
+                                </Slide>
                             </div>
                         </div>
                     </div>
