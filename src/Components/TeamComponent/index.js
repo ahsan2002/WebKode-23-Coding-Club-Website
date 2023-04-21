@@ -8,18 +8,15 @@ const index = () => {
     return (
         <>
             <Layout>
-                <div className="regmain">
-                    <h2>Our Team</h2>
-                </div>
-                <div className="team_main" >
+            <div style={{display:'flex'}}>
                     <Sidebar />
-                    <div className="cards_main" style={{display:'flex'}}>
-                        <TeamCard />
-                        <TeamCard />
-                        <TeamCard />
 
-                </div>
+                <div className="team_main" >
+                        <TeamCard />
+                        <TeamCard />
+                        <TeamCard />
                     </div>
+            </div>
             </Layout>
         </>
     )

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.main-search-blog {
+    background: #fbf9ff;
+    padding: 3rem 3rem 3rem 3rem;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin: 0px auto;
+    width: 90%;
+    margin-bottom: 3.2rem;
+}
+
+.input-search {
+    font-family: "Poppins", sans-serif !important;
+    height: 50px;
+    font-size: 14.5px;
+    color: #999999;
+    padding-left: 18px;
+    border-radius: 0;
+    width: 100%;
+    border: 1px solid #ced4da;
+    transition: .15s ease-in-out;
+}
+
+.input-search:focus {
+    outline: none;
+
+}
+
+.search-icon {
+    position: absolute;
+    font-size: 21px;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.btn-search-blog {
+    font-family: "Poppins", sans-serif !important;
+    width: 100%;
+    display: inline-block;
+    padding: 18px 44px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    /* condition 1 */
+    /* background: linear-gradient(193deg, #c738d8, #7c32ff);
+    color: #fff !important;
+    border: none; */
+    /* condition 2 */
+    background: #fff;
+    color: #2E004B !important;
+    border: 1px solid #2E004B;
+}
+
+.btn-search-blog:hover {
+    cursor: pointer;
+    /* condition 1 */
+    /* background: linear-gradient(193deg, #7c32ff, #c738d8); */
+    /* condition 2 */
+    color: #fff !important;
+    background: #2E004B !important;
+    font-size: 16px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-search-blog {
+        width: 100%;
+    }
+}

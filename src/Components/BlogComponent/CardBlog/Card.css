@@ -51,6 +51,7 @@
 .category-date-div .blog-category {
     font-family: 'Poppins', sans-serif !important;
     font-size: 1.3rem;
+    color: black;
     font-weight: 600;
     margin-bottom: 0px;
 }
@@ -76,9 +77,16 @@
 }
 
 .blog-heading {
+    color: #2E004B;
+
     font-size: 1.9rem;
     font-weight: 700;
     font-family: 'Poppins', sans-serif !important;
+    transition: 0.3s;
+}
+
+.blog-heading:hover {
+    color: #b83ce4 !important;
 }
 
 .blog-para {
@@ -108,6 +116,8 @@
 .author-info .author-name {
 
     font-family: 'Poppins', sans-serif !important;
+    color: #2E004B;
+    ;
     font-size: 1.8rem;
     font-weight: 600;
 
@@ -158,4 +168,28 @@
     .category-date-div .blog-date {
         font-size: 1.5rem;
     }
+}
+
+
+.card-data--img {
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.card-data--img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.card-data--img:hover::after {
+    width: 100%;
 }

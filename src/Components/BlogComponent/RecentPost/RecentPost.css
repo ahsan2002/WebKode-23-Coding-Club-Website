@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.main-recentpost {
+    background: #fbf9ff;
+    padding: 3rem 3rem 3rem 3rem;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin: 0px auto;
+    width: 90%;
+    margin-bottom: 3.2rem;
+}
+
+.recentpost-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+    color: #2E004B;
+
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.recentpost-heading::after {
+    content: "";
+    display: block;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid #f0e9ff;
+}
+
+.recent-card {
+
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 2.3rem;
+}
+
+.recent-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.recent-card-content {
+
+    align-self: center;
+    padding-left: 15px;
+}
+
+.recent-link {
+
+    color: #666666 !important;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.recent-link h3 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px;
+    color: #2E004B;
+    line-height: 20px;
+    margin-bottom: 6px;
+    transition: all 0.3s linear;
+}
+
+.recent-link h3:hover {
+    color: #b83ce4 !important;
+}
+
+.recent-card-content p {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #888;
+    line-height: 21px;
+    margin-bottom: 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .main-recentpost {
+        width: 100%;
+    }
+}
+
+
+.recent-post--img {
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    border-radius: 50%;
+}
+
+.recent-post--img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.recent-post--img:hover::after {
+    content: "view";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+}

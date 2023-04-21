@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import Navbar from './Navbar.js'
-import './Navbar.css'
+import './BottomToTop.css'
+import { FaArrowUp } from "react-icons/fa";
 
-const Header = () => {
+const BottomToTop = () => {
 
     const [isVisible, setVisible] = useState(false);
+
+    const goToBtn = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    }
 
     const listenToScroll = () => {
         let heightScroll = 250; // apko kb ussy display krana woh value
@@ -24,14 +27,19 @@ const Header = () => {
         return () => window.removeEventListener('scroll', listenToScroll) // yhn py forn apki app sy scroll data dlt krdega issy load nh brhga apki app py warna bar bar scroll ky data load pr ky hang hoskta
     }, [])
 
+    // useEffect offers the use of return function, which is used for cleanup function purpose
+
     return (
-        <header className={`${isVisible ? 'default-header  scroll-header' : 'default-header '}`}>
-            <NavLink to={'/'}>
-                <img className='logo' src="/images/logo.png" alt="" />
-            </NavLink>
-            <Navbar />
-        </header>
+        <>
+            <section className='bottom-btn-section'>
+                {isVisible && (
+                    <div className='top-btn' onClick={goToBtn}>  {/* jb bh koe click krega to yeh execute hoga function */}
+                        <FaArrowUp className='top-btn--icon' />
+                    </div>
+                )}
+            </section>
+        </>
     )
 }
 
-export default Header
+export default BottomToTop
