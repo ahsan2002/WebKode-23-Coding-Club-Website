@@ -2,12 +2,14 @@ import React from 'react'
 import './Contact.css'
 import Slide from 'react-reveal'
 
-const Contact = () => {
+const Contact = ({heading='true'}) => {
     return (
         <>
             <section className="contactus-section">
                 <div className="container">
-                    <h2 className='mainheading'>Contact Us</h2>
+                {
+                    heading === 'true' &&  <h2 className='mainheading'>Contact Us</h2>
+                }
                     <div className="row mx-auto">
                         <div className="col-12 col-lg-12 mx-auto">
                             <div className="row mx-auto" style={{ justifyContent: "space-evenly" }}>

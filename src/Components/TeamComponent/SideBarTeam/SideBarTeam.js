@@ -2,11 +2,13 @@ import React from 'react'
 import './SideBarTeam.css'
 import { IoIosPeople } from "react-icons/io";
 import { NavLink } from 'react-router-dom';
+import Slide from 'react-reveal'
 
 
 const Sidebar = () => {
   return (
     <>
+    <Slide left>
       <div className="sidebar-team">
         <div className='team-sidebar-div'>
           <IoIosPeople className='team-sidebar-icon' />
@@ -17,6 +19,7 @@ const Sidebar = () => {
           </NavLink>
         </div>
       </div>
+      </Slide>
     </>
   )
 }
