@@ -43,14 +43,14 @@
 .my-sidebar-member-btn {
     padding: 14px 20px 14px 20px;
     margin-top: 15px;
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to right, #141e30, #243b55);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 2px solid #fff;
     color: #fff;
     font-family: "Roboto", sans-serif;
     width: 134px;
     font-size: 17px;
     font-weight: 500;
-    border: 1px solid #fff;
     border-radius: 3px;
     outline: none !important;
     box-shadow: none !important;
@@ -60,8 +60,9 @@
 }
 
 .my-sidebar-member-btn:hover {
-    background-color: #fff;
-    color: #2E004B;
+    background: #fff;
+    font-weight: 600;
+    color: #1a2238;
 }
 
 @media only screen and (max-width: 768px) {

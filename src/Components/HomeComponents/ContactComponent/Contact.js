@@ -115,7 +115,7 @@ const Contact = ({heading='true'}) => {
                                             </div>
                                             <button
                                                 type="submit"
-                                                className="mybtn">
+                                                className="mybtn-contact">
                                                 Submit
                                             </button>
                                         </form>
