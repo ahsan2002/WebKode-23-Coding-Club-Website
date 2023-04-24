@@ -25,7 +25,7 @@ const Main = () => {
         <Fade left>
 
           <div className="myimg">
-            <img src="https://preview.colorlib.com/theme/edumark/img/banner/edu_ilastration.png.webp" alt="" />
+            <img src="./images/main-home-img-1.png" alt="" />
           </div>
         </Fade>
 
