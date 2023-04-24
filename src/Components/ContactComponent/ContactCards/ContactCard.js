@@ -6,21 +6,21 @@ const ContactCard = () => {
 
     const data = [
         {
-            img: <IoLocationSharp size={50}  />,
+            img: <IoLocationSharp size={50} />,
             heading: 'Address',
             description: "CSIT Department,Main University Rd, NED University Of Engineering & Technology, Karachi"
 
         },
         {
-            img: <IoPhonePortrait size={50}  />,
+            img: <IoPhonePortrait size={50} />,
             heading: 'Phone',
             description: "0318-2933679"
 
         },
         {
-            img: <IoMailSharp size={50}  />,
+            img: <IoMailSharp size={50} />,
             heading: 'Email Address',
-            description: "omerjee.ahsan@gmail.com"
+            description: "koder_club@gmail.com"
 
         }
     ]
@@ -38,7 +38,7 @@ const ContactCard = () => {
                                 <p>
                                     {elem.description}
                                 </p>
-                            </div> 
+                            </div>
                         )
                     })
                 }

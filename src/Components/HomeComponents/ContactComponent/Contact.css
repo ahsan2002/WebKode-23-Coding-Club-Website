@@ -19,7 +19,7 @@
 }
 
 
-.contact-leftside .main-work-para{
+.contact-leftside .main-work-para {
     line-height: 22px;
     font-family: 'Poppins', sans-serif !important;
     font-size: 1.4rem;
@@ -96,6 +96,11 @@
 
 .form-checkbox-style {
     margin: 4rem 0;
+}
+
+.form-check-input:checked {
+    background-color: #1A2238;
+    border-color: #1A2238;
 }
 
 .contact-rightside form .main-work-para {

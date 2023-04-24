@@ -7,7 +7,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 200px;
+  /* gap: 200px; */
+  gap: 180px;
   /* height: 87vh; */
   font-family: 'Poppins', sans-serif;
   /* background-image: url('https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp');
@@ -58,7 +59,7 @@
 
 
 .myimg img {
-  width: 350px;
+  width: 400px;
   height: 350px;
   margin-top: 6rem;
 }
