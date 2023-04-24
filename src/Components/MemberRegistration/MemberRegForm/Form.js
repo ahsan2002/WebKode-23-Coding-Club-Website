@@ -10,9 +10,10 @@ const Form = () => {
                         <form action='https://formspree.io/f/mdovpvnj' method='POST'>
                             <div className="row">
                                 <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                                    <img className='member_img' src="/Images/person.png" alt="" />
-                                    <br />
-                                    <input className='image_choose' type="file" />
+                                    <label htmlFor="member-img" className='rotateY'>
+                                        <img className='member_img' src="/Images/person.png" alt="" />
+                                    </label>
+                                    <input className='image_choose d-none' name='member-img' id='member-img' type="file" />
                                 </div>
                                 <div className="col-12 col-lg-6 ">
                                     <input type="text"

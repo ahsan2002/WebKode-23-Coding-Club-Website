@@ -1,7 +1,7 @@
 import React from 'react'
 import './MemberReg.css'
 import Layout from '../../Layout/index'
-import Form from './Form';
+import Form from './MemberRegForm/Form';
 import SideBarMember from './SideBarMember/SideBarMember'
 
 

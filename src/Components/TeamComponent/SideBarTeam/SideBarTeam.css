@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: linear-gradient(135deg, #b83ce4, #b83ce4, #7B33FD) !important;
+    /* background: linear-gradient(135deg, #b83ce4, #b83ce4, #7B33FD) !important; */
+    background: #1A2238;
     width: 100%;
     height: 100%;
     border-radius: 15px;

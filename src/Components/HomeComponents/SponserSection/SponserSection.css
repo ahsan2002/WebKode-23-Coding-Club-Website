@@ -9,10 +9,11 @@
     height: 60vh;
 
     display: flex;
+    gap: 4rem;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .main-sponser-heading {
@@ -42,7 +43,8 @@
     /* background: #41d4d5; */
     /* background: #cac8c8; */
     /* background: #61b6c1; */
-    background: linear-gradient(193deg, #c738d8, #7c32ff);
+    /* background: linear-gradient(193deg, #c738d8, #7c32ff); */
+    background-color: #1A2238;
 }
 
 .slick-list {

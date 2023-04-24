@@ -30,8 +30,22 @@
     width: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 20px;
+    /* margin: 20px; */
+    margin: 18px 20px 20px 18px;
     background: #dfdfdf;
+    cursor: pointer;
+}
+
+.rotateY-team-img:hover {
+    transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transform-origin: center;
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    transition: 2.0s ease;
+    -moz-transition: 2.0s ease;
+    -webkit-transition: 2.0s ease;
 }
 
 .team_content {

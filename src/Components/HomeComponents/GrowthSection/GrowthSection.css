@@ -5,7 +5,7 @@
 } */
 
 .main-hero-container {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     /* background-color: blueviolet; */
 }
@@ -14,16 +14,17 @@
     text-transform: capitalize;
     font-weight: bold;
     font-size: 3.8rem;
+    color: #1A2238;
 }
 
 .main-hero-para {
-    font-size: 1.4rem;
-    /* color: var(--text-color); */
     margin: 1rem 0 2rem 0;
-    font-weight: lighter;
-    /* width: 76%; */
     width: 80%;
-    /* text-align: justify ; */
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888;
 }
 
 .main-hero-container h3 {
@@ -62,10 +63,8 @@
 .circle-first {
 
     position: absolute;
-    /* top: 155px;
-    left: 45px; */
-    top: 148px;
-    left: 64px;
+    top: 175px;
+    left: 85px;
     background: #FD8E5E;
     display: flex;
     justify-content: center;
@@ -80,13 +79,7 @@
 .circle-second {
 
     position: absolute;
-    /* top: 70px;
-    right: 55px; */
-    /* second */
-    /* top: 22px;
-    right: 142px; */
-    /* third */
-    top: -18px;
+    top: 70px;
     right: 130px;
     background: #5DB2FF;
     opacity: .7;
@@ -101,10 +94,8 @@
 .circle-third {
 
     position: absolute;
-    /* bottom: 36px; */
-    /* bottom: 70px; */
-    right: 140px;
-    bottom: 100px;
+    right: 210px;
+    bottom: 82px;
     background: #04D2C8;
     opacity: .5;
     display: flex;

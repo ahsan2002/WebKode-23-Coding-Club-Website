@@ -30,6 +30,9 @@ const Main = () => {
         </Fade>
 
       </div>
+      <div>
+        <img src="./images/main-home-bg.png" alt="" />
+      </div>
     </>
   )
 }

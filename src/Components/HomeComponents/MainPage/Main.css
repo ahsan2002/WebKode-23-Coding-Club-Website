@@ -8,32 +8,34 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 200px;
-  height: 87vh;
+  /* height: 87vh; */
   font-family: 'Poppins', sans-serif;
-  background-image: url('https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp');
+  /* background-image: url('https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #1A2238;
 }
 
 .my-btn {
   color: white;
-  background: linear-gradient(193deg, #c738d8, #7c32ff);
+  /* background: linear-gradient(193deg, #c738d8, #7c32ff); */
+  background: linear-gradient(to right, #141e30, #243b55);
   border-radius: 30px;
   padding: 10px 25px;
   margin-top: 15px;
-  border: 1px solid #c738d8;
+  border: 2px solid #fff;
   outline: none;
   width: 13rem;
   font-size: 1.5rem;
   font-weight: 500;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   transition: width 1.4s ease;
 }
 
 .my-btn:hover {
   cursor: pointer;
-  background: linear-gradient(193deg, #7c32ff, #c738d8);
+  background: linear-gradient(to left, #141e30, #243b55);
   width: 100%;
 }
 
@@ -43,7 +45,7 @@
   flex-direction: column;
   gap: 1.3rem;
   color: #fff;
-  margin-bottom: 90px;
+  margin-top: 9rem;
 }
 
 .intro h1 {
@@ -56,8 +58,9 @@
 
 
 .myimg img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
+  margin-top: 6rem;
 }
 
 

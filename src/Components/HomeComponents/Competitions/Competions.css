@@ -18,7 +18,8 @@
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   gap: 26px;
   padding: 4rem 2rem 4rem 2rem;
-  background: linear-gradient(193deg, #7c32ff, #c738d8);
+  /* background: linear-gradient(193deg, #7c32ff, #c738d8); */
+  background-color: #1A2238;
 }
 
 
@@ -70,16 +71,18 @@ main {
 }
 
 .card-content h2 {
-  font-size: 3.4rem;
+  word-spacing: 25px;
+  font-size: 2.9rem;
   font-weight: 700;
-
-
 }
 
 .card-content p {
-  font-size: 1.5rem;
-  font-weight: 300;
   text-align: justify;
+  line-height: 22px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #888;
 }
 
 .icon {

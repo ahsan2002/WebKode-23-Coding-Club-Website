@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <header className={`${isVisible ? 'default-header  scroll-header' : 'default-header '}`}>
             <NavLink to={'/'}>
-                <img className='logo' src="/images/logo.png" alt="" />
+                <img className='logo rotateY-logo' src="/images/koders-club-logo.png" alt="" />
             </NavLink>
             <Navbar />
         </header>

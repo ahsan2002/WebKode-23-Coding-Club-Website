@@ -4,6 +4,19 @@
     border-radius: 50%;
     object-fit: cover;
     background: #dfdfdf;
+    cursor: pointer;
+}
+
+.rotateY:hover {
+    transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transform-origin: center;
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    transition: 2.0s ease;
+    -moz-transition: 2.0s ease;
+    -webkit-transition: 2.0s ease;
 }
 
 .member-section {

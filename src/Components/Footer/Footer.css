@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Poppins&display=swap');
-
-* {
-    font-family: 'IBM Plex Sans' !important;
-
-}
-
 .footer {
-    background: url('https://preview.colorlib.com/theme/edumark/img/banner/footer_bg.png.webp');
+    /* background: url('https://preview.colorlib.com/theme/edumark/img/banner/footer_bg.png.webp'); */
+    background: #1a2238;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,18 +38,18 @@
 
 .my-btn-F {
     color: white;
-  background: linear-gradient(193deg, #c738d8, #7c32ff);
-  border-radius: 30px;
-  padding: 10px 25px;
-  margin-top: 15px;
-  border: 1px solid #c738d8;
-  outline: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: width 1.4s ease;
-width: 14rem !important;
-font-size: 1.5rem;
+    background: linear-gradient(193deg, #c738d8, #7c32ff);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border: 1px solid #c738d8;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: width 1.4s ease;
+    width: 14rem !important;
+    font-size: 1.5rem;
 }
 
 .my-btn-F:hover {
