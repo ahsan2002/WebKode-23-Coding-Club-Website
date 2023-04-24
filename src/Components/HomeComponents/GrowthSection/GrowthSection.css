@@ -33,22 +33,22 @@
 
 .my-btn-G {
     color: white;
-    background: linear-gradient(193deg, #c738d8, #7c32ff);
     border-radius: 30px;
     padding: 10px 25px;
     margin-top: 15px;
-    border: 1px solid #c738d8;
     outline: none;
     width: 14rem !important;
     font-size: 1.5rem;
     font-weight: 500;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: none;
     transition: width 1.4s ease;
 }
 
 .my-btn-G:hover {
     cursor: pointer;
-    background: linear-gradient(193deg, #7c32ff, #c738d8);
+    background: linear-gradient(to left, #141e30, #243b55);
     width: 46% !important;
 }
 

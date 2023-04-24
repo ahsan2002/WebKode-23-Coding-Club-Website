@@ -44,7 +44,7 @@
     /* background: #cac8c8; */
     /* background: #61b6c1; */
     /* background: linear-gradient(193deg, #c738d8, #7c32ff); */
-    background-color: #1A2238;
+    background: linear-gradient(to right, #141e30, #243b55);
 }
 
 .slick-list {

@@ -38,23 +38,23 @@
 
 .my-btn-F {
     color: white;
-    background: linear-gradient(193deg, #c738d8, #7c32ff);
+    background: linear-gradient(to right, #141e30, #243b55);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 2px solid #fff;
     border-radius: 30px;
     padding: 10px 25px;
     margin-top: 15px;
-    border: 1px solid #c738d8;
     outline: none;
     font-size: 1.5rem;
     font-weight: 500;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: width 1.4s ease;
+    transition: width 1s ease;
     width: 14rem !important;
     font-size: 1.5rem;
 }
 
 .my-btn-F:hover {
     cursor: pointer;
-    /* border: 1px solid #c738d8; */
-    background: linear-gradient(193deg, #7c32ff, #c738d8);
+    border: 2px solid #fff;
+    background: linear-gradient(to left, #141e30, #243b55);
     width: 60% !important;
 }
