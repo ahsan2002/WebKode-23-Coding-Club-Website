@@ -1,4 +1,4 @@
-import React from "react";
+import {React,useEffect} from "react";
 import "./About.css";
 import SideBarAbout from "./SideBarAbout/SideBarAbout";
 import AboutCard from "./AboutCard/AboutCard";
@@ -18,6 +18,9 @@ const aboutCardData = [
 
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+}, []);
   return (
     <>
       {/* page1 */}

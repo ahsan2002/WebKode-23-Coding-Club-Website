@@ -19,7 +19,6 @@ const index = () => {
 
             </Layout>
         </>
-    )
-}
+    )}
 
-export default index
+export default index;

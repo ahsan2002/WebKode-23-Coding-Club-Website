@@ -1,8 +1,10 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import './Contact.css'
 import Slide from 'react-reveal'
 
 const Contact = ({heading='true'}) => {
+    
+    
     return (
         <>
             <section className="contactus-section">

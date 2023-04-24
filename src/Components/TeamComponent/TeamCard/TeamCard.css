@@ -1,7 +1,7 @@
 .team_card {
     display: flex;
     width: 30rem;
-    height: 43rem;
+    height: 44rem;
     border-radius: 15px;
     position: relative;
     color: black;
@@ -15,7 +15,7 @@
 
 .circle {
     background-color: #fff;
-    border: 8px solid #b83ce4;
+    border: 8px solid #1A2238;
     /* border-image:  linear-gradient(135deg, #7B33FD, #8332FD, );     */
     height: 200px;
     border-radius: 50%;
@@ -65,7 +65,7 @@
 .team_content h5 {
     font-weight: 500;
     font-size: 1.9rem;
-    color: #b83ce4;
+    color: #1A2238;
 }
 
 .team_content p {

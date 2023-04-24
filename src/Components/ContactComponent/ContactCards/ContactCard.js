@@ -1,6 +1,7 @@
 import React from 'react'
 import './ContactCard.css';
 import { IoLocationSharp, IoPhonePortrait, IoMailSharp } from "react-icons/io5";
+import Fade  from 'react-reveal/Fade'
 
 const ContactCard = () => {
 
@@ -26,6 +27,7 @@ const ContactCard = () => {
     ]
     return (
         <>
+             <Fade top>
             <div className="contact_card_main">
                 {
                     data.map((elem) => {
@@ -43,6 +45,8 @@ const ContactCard = () => {
                     })
                 }
             </div>
+
+             </Fade>
         </>
     )
 }

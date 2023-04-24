@@ -15,9 +15,9 @@ const TeamCard = () => {
           <h5>President</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, eligendi? Sit, impedit unde quod adipisci esse possimus ipsum! Eum harum perferendis hic facilis. Nihil, atque.</p>
           <div className="icons">
-            <div><FiFacebook size={23} color='#b83ce4' /></div>
-            <div><FiInstagram size={23} color='#b83ce4' /></div>
-            <div><FiLinkedin size={23} color='#b83ce4' /></div>
+            <div><FiFacebook size={23} color='#1A2238' /></div>
+            <div><FiInstagram size={23} color='#1A2238' /></div>
+            <div><FiLinkedin size={23} color='#1A2238' /></div>
           </div>
         </div>
       </div>
