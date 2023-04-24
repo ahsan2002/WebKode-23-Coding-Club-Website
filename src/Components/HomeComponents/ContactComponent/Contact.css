@@ -18,6 +18,16 @@
     height: auto;
 }
 
+
+.contact-leftside .main-work-para{
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888;
+
+}
+
 .my_input {
     margin-bottom: 0.5rem;
     width: 100%;
@@ -25,7 +35,7 @@
     padding-left: 0;
     background: none;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.4rem;
     font-weight: 400;
     border: none;
     outline: none;
@@ -47,7 +57,7 @@
 .separator {
     height: 3px;
     width: 100%;
-    background: #b83ce4;
+    background: #1A2238;
     display: block;
     transform: scaleX(0) translateY(-2px);
     transform-origin: 50%;
@@ -89,13 +99,15 @@
 }
 
 .contact-rightside form .main-work-para {
-    font-size: 1.2rem;
-    color: var(--text-color);
     margin: 0 !important;
-    font-weight: lighter;
     width: 75%;
     padding: 0 2rem !important;
     text-align: start;
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888;
 }
 
 .mybtn-contact {
