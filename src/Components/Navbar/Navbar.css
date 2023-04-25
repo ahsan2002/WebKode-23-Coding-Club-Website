@@ -53,6 +53,7 @@ header {
     display: flex;
     gap: 4rem;
     align-items: center;
+    margin: 0;
 }
 
 /* li */
@@ -96,7 +97,7 @@ header {
 
 @media (max-width: 798px) {
     .logo {
-        height: 10rem !important;
+        height: 6rem !important;
     }
 
     .mobile-nav--btn {
@@ -107,7 +108,7 @@ header {
 
     .mobile-nav--btn .mobile-nav--icon {
         font-size: 4.2rem;
-        color: #212529;
+        color: #fff;
     }
 
     .active .mobile-nav--icon {
@@ -117,7 +118,7 @@ header {
         /*header my relative ki vi hy*/
         top: 30%;
         right: 10%;
-        color: #212529;
+        color: #fff;
         z-index: 9999;
     }
 
@@ -146,7 +147,7 @@ header {
     }
 
     .active .navbar-lists {
-        background: #8332FD;
+        background: #1a2238;
         visibility: visible;
         opacity: 1;
         transform: translateX(0);

@@ -24,13 +24,29 @@
   width: 33rem;
 }
 
+.blog-topper-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  margin-top: 4rem;
+  background-color: #1a2238;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog-topper-div h2 {
+  font-size: 4.6rem;
+}
+
 
 .blog-col {
-  padding: 6rem 0px;
+  padding: 2rem 0px;
 }
 
 .blog-right-col {
-  padding: 10rem 0rem;
+  padding: 6rem 0rem;
 }
 
 @media only screen and (max-width: 768px) {
