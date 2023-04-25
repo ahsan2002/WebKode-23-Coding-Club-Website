@@ -1,0 +1,12 @@
+.event-topper-div {
+    height: 30rem;
+    margin: 4rem 0rem;
+    background-color: #1a2238;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Event-topper-h2 {
+    font-size: 4.6rem;
+}

@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .event_card_desc {
@@ -25,23 +26,39 @@
     gap: 15px;
 }
 
-.event_card_img{
+/* for 1st */
+
+.event_card_img {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.event_card_main_img{
-    width: 390px;
-    height: 380px;
+.event_card_main_img {
+    width: 380px;
+    height: 430px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.event_card_sec_img{
+.event_card_sec_row_img {
     position: absolute;
-    top: 90px;
-    right: -20px;
-  
+    top: 235px;
+    right: -75px;
+    height: 21rem;
+    border: 15px solid rgba(241, 245, 253, 0.7);
+
 }
 
+/* for 2nd*/
+
+.event_card_sec_reverse_img {
+    position: absolute;
+    top: 235px;
+    left: -84px;
+    right: unset;
+    height: 21rem;
+    border: 15px solid rgba(241, 245, 253, 0.7);
+}
 
 .event_icon {
     display: flex;
