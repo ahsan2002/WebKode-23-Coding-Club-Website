@@ -4,7 +4,6 @@ import HomeComponent from './Components/HomeComponents'
 import AboutComponent from './Components/AboutComponent'
 import BlogComponent from './Components/BlogComponent'
 import EventComponent from './Components/EventComponent'
-import GalleryComponent from './Components/GalleryComponent'
 import TeamComponent from './Components/TeamComponent'
 import ContactComponent from './Components/ContactComponent'
 import MemberReg from './Components/MemberRegistration/MemberReg'
@@ -27,10 +26,6 @@ const App = () => {
     {
       path: '/events',
       element: <EventComponent />
-    },
-    {
-      path: '/gallery',
-      element: <GalleryComponent />
     },
     {
       path: '/team',

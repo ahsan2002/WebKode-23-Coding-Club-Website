@@ -32,9 +32,8 @@ const Index = () => {
                                 <NavLink className="link-light text-decoration-none" href="#">About Us</NavLink>
                                 <NavLink className="link-light text-decoration-none" href="#">Blogs</NavLink>
                                 <NavLink className="link-light text-decoration-none" href="#">Events</NavLink>
-                                <NavLink className="link-light text-decoration-none" href="#">Gallery</NavLink>
                                 <NavLink className="link-light text-decoration-none" href="#">Team</NavLink>
-                                <NavLink className="link-light text-decoration-none" href="#">Contact US</NavLink>
+                                <NavLink className="link-light text-decoration-none" href="#">Contact Us</NavLink>
                             </div>
                         </div>
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3 pt-5">Support On</h3>
