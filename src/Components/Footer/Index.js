@@ -7,11 +7,11 @@ const Index = () => {
         <>
             <div className="container-fluid footer">
                 <div className="row  justify-content-evenly text-white pt-4 pb-5">
-                    <div className="col-lg-3 col-mg-3 col-10 pt-0">
+                    <div className="col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         {/* <!-- <h1 className="justify-content-center align-items-center d-flex">STF</h1> --> */}
                         <div className="d-flex justify-content-center align-items-center">
-                            <img className=" " src={"./images/logo.png"} alt=""
-                                width="55%" height="55%" />
+                            <img className="mb-5 mt-2" src={"./images/koders-club-logo.png"} alt=""
+                            />
                         </div>
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission</h3>
                         <p style={{ fontSize: "1.6rem", fontWeight: "600" }}>We are a Community of Coding Enthusiasts</p>
@@ -39,15 +39,15 @@ const Index = () => {
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3 pt-5">Support On</h3>
                         <div className="justify-content-center align-items-center d-flex"
                             style={{ fontSize: "2rem", gap: "1rem" }}>
-                                <a href="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL" target='_blank'>
-                            <i className="footer-icon bi bi-facebook mx-3 pb-4 pt-2"></i>
-                                </a>
-                                <a href="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D" target='_blank'>
-                            <i className="footer-icon bi bi-instagram mx-3 pb-4 pt-2"></i>
-                                </a>
-                                <a href="" target='_blank'>
-                            <i className="footer-icon bi bi-whatsapp mx-3 pb-4 pt-2"></i>
-                                </a>
+                            <a href="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL" target='_blank'>
+                                <i className="footer-icon bi bi-facebook mx-3 pb-4 pt-2"></i>
+                            </a>
+                            <a href="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D" target='_blank'>
+                                <i className="footer-icon bi bi-instagram mx-3 pb-4 pt-2"></i>
+                            </a>
+                            <a href="" target='_blank'>
+                                <i className="footer-icon bi bi-whatsapp mx-3 pb-4 pt-2"></i>
+                            </a>
                             {/* <i className="footer-icon bi bi-twitter mx-3 pb-4 pt-2"></i> */}
                             {/* <i className="footer-icon bi bi-envelope mx-3 pb-4 pt-2"></i> */}
                         </div>

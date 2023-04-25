@@ -12,9 +12,13 @@ const index = () => {
     return (
         <Layout>
             <div className='ss'>
-                <div className="regmain">
-                    {/* <h2>Blogs</h2> */}
-                    <img src="./images/logo.png" alt="" />
+
+                <div className='container'>
+                    <div className="row">
+                        <div className="blog-topper-div col-10 col-lg-12 col-md-12 mx-auto">
+                            <h2>Blogs</h2>
+                        </div>
+                    </div>
                 </div>
                 <div className='main-blog-page'>
                     <div className='container' >

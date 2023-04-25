@@ -26,11 +26,11 @@ const About = () => {
       {/* page1 */}
       <div className="container">
         <div className="row">
-          <div className="about-first-col col-11 col-lg-4 col-md-4">
+          <div className="about-first-col col-11 col-lg-4 col-md-4 mx-auto">
             <SideBarAbout />
           </div>
 
-          <div className="about-second-col col-11 col-lg-8 col-md-8">
+          <div className="about-second-col col-11 col-lg-8 col-md-8 mx-auto">
             <div className="row">
 
               {
@@ -58,7 +58,7 @@ const About = () => {
           </div>
 
 
-          <div className="about-page2-right-col col-11 col-lg-6 col-md-6">
+          <div className="about-page2-right-col col-11 col-lg-6 col-md-6 mx-auto">
             <div className="">
               <div className="about-page2-inner-div">
                 <p className="about-page2-sm-heading">WHY&nbsp;CHOOSE&nbsp;US</p>

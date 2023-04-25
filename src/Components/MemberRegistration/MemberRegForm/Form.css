@@ -141,3 +141,9 @@
     cursor: pointer;
     background: linear-gradient(to left, #141e30, #243b55);
 }
+
+@media only screen and (max-width: 768px) {
+    .member_reg_leftside form .main-work-para {
+        width: 96%;
+    }
+}

@@ -53,6 +53,7 @@ header {
     display: flex;
     gap: 4rem;
     align-items: center;
+    margin: 0;
 }
 
 /* li */
@@ -96,7 +97,7 @@ header {
 
 @media (max-width: 798px) {
     .logo {
-        height: 10rem !important;
+        height: 6rem !important;
     }
 
     .mobile-nav--btn {
@@ -146,7 +147,7 @@ header {
     }
 
     .active .navbar-lists {
-        background: #1A2238;
+        background: #1a2238;
         visibility: visible;
         opacity: 1;
         transform: translateX(0);

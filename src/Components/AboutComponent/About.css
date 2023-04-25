@@ -82,3 +82,21 @@
   color: #888;
 
 }
+
+@media only screen and (max-width: 768px) {
+  .about-second-col {
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .about-page2-right-col {
+    padding: 6rem 0rem 0rem 0rem;
+  }
+
+  .about-page2-para {
+    text-align: justify;
+  }
+
+  .about-page2-content-inner-p {
+    text-align: justify;
+  }
+}
