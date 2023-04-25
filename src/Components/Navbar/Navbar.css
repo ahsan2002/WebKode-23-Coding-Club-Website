@@ -187,3 +187,60 @@ header {
     transform-origin: left;
     transform: scaleX(1);
 }
+
+
+.team-link {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: #f1f5fd;
+    color: #1a2238;
+    width: 18rem;
+    right: -3rem;
+    top: 4rem !important;
+    border-radius: 15px;
+    padding: 26px 0 22px 0;
+    transform: translate3d(0, 0, 0);
+    z-index: 99;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    /* top: 100%; */
+    left: unset;
+}
+
+.sub-menu::before {
+    border-color: transparent transparent #f1f5fd;
+    border-style: solid;
+    border-width: 0 10px 11px;
+    content: '';
+    left: 120px;
+    position: absolute;
+    top: -10px;
+}
+
+
+.drop-link {
+    color: #1a2238 !important;
+    background: #f1f5fd !important;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    line-height: calc(22/16);
+    padding: 8px 20px 8px 40px;
+}
+
+.drop-link:hover {
+    color: #f1f5fd !important;
+    background: linear-gradient(to right, #243b55, #141e30, #243b55) !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */
+}

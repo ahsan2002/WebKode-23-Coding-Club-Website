@@ -27,9 +27,16 @@ const Navbar = () => {
                             <NavLink to='/events' className='navbar-link home-link'
                                 onClick={() => { setActiveMenu(false) }}>Events</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/team' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Team</NavLink>
+                        <li className=' dropdown'>
+                            <NavLink to='/team'
+                                className='navbar-link team-link'
+                                data-bs-toggle="dropdown"
+                                onClick={() => { setActiveMenu(false) }}>Team
+                            </NavLink>
+                            <ul className="sub-menu dropdown-menu">
+                                <li><NavLink className="drop-link dropdown-item" to={'/member-registration'}>Join Us</NavLink></li>
+                                <li><NavLink className="drop-link dropdown-item" to={'/team'}>Members</NavLink></li>
+                            </ul>
                         </li>
                         <li>
                             <NavLink to='/contactus' className='navbar-link home-link'
