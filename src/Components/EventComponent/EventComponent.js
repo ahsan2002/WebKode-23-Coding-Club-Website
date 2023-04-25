@@ -19,8 +19,6 @@ const index = () => {
                 </div>
             </div>
             <EventCard/>
-            <EventCard/>
-            <EventCard/>
         </Layout>
     )
 }

@@ -1,9 +1,11 @@
 import React from 'react'
-import './Form.css'
+import './Form.css';
+import Slide from 'react-reveal'
 
 const Form = () => {
     return (
         <>
+ <Slide right>
             <section className="member-section">
                 <div className="row mx-auto">
                     <div className="col-12 col-lg-12 col-md-12 member_reg_leftside mx-auto">
@@ -117,6 +119,7 @@ const Form = () => {
                     </div>
                 </div>
             </section>
+            </Slide>
         </>
     )
 }
