@@ -20,20 +20,19 @@ const EventCard = ({ imgFirst, imgSecond, imgClass, heading, para, eventDate, lo
                     <p>{para}</p>
                     <div className="event_icon">
                         <div>
-                        <div className='event_icon_inner'>
                             <IoLocationSharp size={25} />
-                            <h4>Location</h4>
-                        </div>
-                            <h5>{loc}</h5>
+                            <div>
+                                <h4 className=' event-h4'>Location</h4>
+                                <h5>{loc}</h5>
+                            </div>
                         </div>
                         <div>
-                        <div className='event_icon_inner'>
                             <IoTodaySharp size={25} />
-                            <h4>Date</h4>
+                            <div>
+                                <h4 className=' event-h4'>Date</h4>
+                                <h5>{eventDate}</h5>
+                            </div>
                         </div>
-                            <h5>{eventDate}</h5>
-                        </div>
-
                     </div>
                 </div>
             </div>

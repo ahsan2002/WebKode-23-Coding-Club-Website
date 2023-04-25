@@ -63,31 +63,36 @@
 .event_icon {
     display: flex;
     align-items: center;
-    gap: 22rem;
+    gap: 18rem;
 
 }
 
 .event_icon>div {
     display: flex;
-    flex-direction: column;
     gap: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.event_icon > div > h5{
+.event_icon>div>h5 {
     margin-left: 20px;
 }
 
-.event_icon_inner{
+.event_icon_inner {
     display: flex;
     gap: 5px;
     justify-content: center;
     align-items: center;
 }
 
-.event_icon_inner > h4{
+/* .event_icon_inner>h4 {
     margin-top: 4px;
+    font-size: 1.7rem;
+} */
+
+.event-h4 {
+    font-weight: 700;
+    font-size: 1.7rem;
 }
 
 
