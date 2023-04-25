@@ -71,23 +71,27 @@
   .main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    gap: 4.5rem !important;
+    justify-content: space-between;
+    height: 80vh;
+    gap: 2rem !important;
   }
 
   .intro {
-    margin-top: -140px;
+    /* margin-top: -140px; */
     margin-bottom: 0px !important;
   }
 
-  .myimg {
+  /* .myimg {
     margin-top: -35px;
-  }
+  } */
 
   .myimg img {
     width: 345px;
     height: 270px;
   }
 
+  .main-home-bg-img {
+    height: 6rem;
+  }
 
 }
