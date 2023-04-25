@@ -8,12 +8,13 @@ const EventCard = ({ img, heading, para, eventDate, loc }) => {
     return (
 
         <>
-            <div className='event-left-col col-10 col-lg-6 col-md-6 mx-auto'>
+            <div className='event-left-col col-10 col-lg-5 col-md-5 mx-auto'>
                 <div className="event_card_img">
-                    <img src={img} alt="" />
+                    <img className='event_card_main_img' src={img} alt="" />
+                    <img className='event_card_sec_img'  src="https://preview.colorlib.com/theme/eventz/assets/img/gallery/about2.png" alt="" />
                 </div>
             </div>
-            <div className='event-right-col col-10 col-lg-5 col-md-5 mx-auto'>
+            <div className='event-right-col col-10 col-lg-4 col-md-4 mx-auto'>
                 <div className="event_card_desc">
                     <h2>{heading}</h2>
                     <p>{para}</p>

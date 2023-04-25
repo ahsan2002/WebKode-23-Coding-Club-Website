@@ -25,11 +25,23 @@
     gap: 15px;
 }
 
-.event_card_img img {
+.event_card_img{
+    position: relative;
+}
+
+.event_card_main_img{
     width: 390px;
     height: 380px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.event_card_sec_img{
+    position: absolute;
+    top: 90px;
+    right: -20px;
+  
+}
+
 
 .event_icon {
     display: flex;
