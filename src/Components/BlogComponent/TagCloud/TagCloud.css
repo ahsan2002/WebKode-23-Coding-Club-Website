@@ -47,7 +47,7 @@
 }
 
 .tag-cloud-link:hover {
-    background-color: #b83ce4 !important;
+    background: linear-gradient(to right, #141e30, #243b55) !important;
     color: #fff;
 }
 

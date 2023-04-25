@@ -2,6 +2,7 @@ import {React,useEffect} from "react";
 import "./About.css";
 import SideBarAbout from "./SideBarAbout/SideBarAbout";
 import AboutCard from "./AboutCard/AboutCard";
+import Slide from 'react-reveal';
 
 const aboutCardData = [
   {
@@ -31,6 +32,7 @@ const About = () => {
           </div>
 
           <div className="about-second-col col-11 col-lg-8 col-md-8 mx-auto">
+          <Slide right>
             <div className="row">
 
               {
@@ -43,6 +45,7 @@ const About = () => {
                 })
               }
             </div>
+            </Slide>
           </div>
 
         </div>
@@ -51,13 +54,16 @@ const About = () => {
       {/* page2 */}
       <div className="container" >
         <div className="row about-page2-row">
+        <Slide left>
           <div className="about-page2-left-col col-11 col-lg-6 col-md-6 mx-auto">
             <div className="about-page2-img-div">
               <img src='./images/Vision.jpg' alt="" />
             </div>
           </div>
+          </Slide>
 
-
+            
+            <Slide right>
           <div className="about-page2-right-col col-11 col-lg-6 col-md-6 mx-auto">
             <div className="">
               <div className="about-page2-inner-div">
@@ -84,6 +90,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          </Slide>
         </div>
       </div>
     </>

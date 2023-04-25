@@ -63,7 +63,7 @@
     /* background: linear-gradient(193deg, #7c32ff, #c738d8); */
     /* condition 2 */
     color: #fff !important;
-    background: #2E004B !important;
+    background: linear-gradient(to right, #141e30, #243b55);
     font-size: 16px !important;
 }
 
