@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import { blogData } from '../../../Api/blogData'
+import Slide from 'react-reveal';
 
 const SingleBlog = () => {
 
@@ -43,6 +44,7 @@ const SingleBlog = () => {
                             <div className="row">
                                 <div className="single-blog-col col-11 col-lg-8 col-md-8 mx-auto">
                                     <SingleBlogCard {...singleBlogdata} />
+                                    <Slide left>
                                     <form className='mt-5' action='https://formspree.io/f/mdovpvnj' method='POST'>
                                         <h3 className='single-card-heading mb-4'>Leave Comment</h3>
                                         <div className="row">
@@ -86,6 +88,7 @@ const SingleBlog = () => {
                                             Comment
                                         </button>
                                     </form>
+                                    </Slide>
                                 </div>
                                 <div className="blog-right-col col-11 col-lg-4 col-md-4 mx-auto">
                                     <SearchBarBlog />
