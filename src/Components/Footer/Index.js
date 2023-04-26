@@ -14,7 +14,7 @@ const Index = () => {
                             />
                         </div>
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission</h3>
-                        <p style={{ fontSize: "1.6rem", fontWeight: "600" }}>We are a Community of Coding Enthusiasts</p>
+                        <p style={{ fontSize: "1.5rem", fontWeight: "600" }}>We are a Community of Coding Enthusiasts hoping to make every individual better</p>
                         <p className="pera-top"
                             style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "justify" }}>A community of like-minded individuals who share a passion for coding. We believe that learning is a lifelong process, and that's why we encourage our members to explore new ideas and technologies.
                         </p>
@@ -28,37 +28,40 @@ const Index = () => {
                         <div className="link-div" style={{ fontWeight: "300" }}>
                             <div className='link-inner-div'>
 
-                                <NavLink className="link-light text-decoration-none" href="#">Home</NavLink>
-                                <NavLink className="link-light text-decoration-none" href="#">About Us</NavLink>
-                                <NavLink className="link-light text-decoration-none" href="#">Blogs</NavLink>
-                                <NavLink className="link-light text-decoration-none" href="#">Events</NavLink>
-                                <NavLink className="link-light text-decoration-none" href="#">Team</NavLink>
-                                <NavLink className="link-light text-decoration-none" href="#">Contact Us</NavLink>
+                                <div><NavLink className="link-light text-decoration-none" to="/">Home</NavLink></div>
+                                <div><NavLink className="link-light text-decoration-none" to="/about">About Us</NavLink></div>
+                                <div><NavLink className="link-light text-decoration-none" to="/blogs">Blogs</NavLink></div>
+                                <div><NavLink className="link-light text-decoration-none" to="/events">Events</NavLink></div>
+                                <div><NavLink className="link-light text-decoration-none" to="/team">Team</NavLink></div>
+                                <div><NavLink className="link-light text-decoration-none" to="/contact-us">Contact Us</NavLink></div>
                             </div>
                         </div>
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3 pt-5">Support On</h3>
                         <div className="justify-content-center align-items-center d-flex"
                             style={{ fontSize: "2rem", gap: "1rem" }}>
-                            <NavLink to="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL">
-                                <i className="footer-icon bi bi-facebook mx-3 pb-4 pt-2"></i>
+                            <NavLink to="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL" target='_blank'>
+                                <i className="footer-icon bi bi-facebook mx-2 pb-4 pt-2"></i>
                             </NavLink>
-                            <NavLink to="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D">
-                                <i className="footer-icon bi bi-instagram mx-3 pb-4 pt-2"></i>
+                            <NavLink to="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D" target='_blank'>
+                                <i className="footer-icon bi bi-instagram mx-2 pb-4 pt-2"></i>
                             </NavLink>
-                            <NavLink to="#">
-                                <i className="footer-icon bi bi-whatsapp mx-3 pb-4 pt-2"></i>
+                            <NavLink to="https://www.linkedin.com/company/koderz-club/" target='_blank'>
+                                <i className="footer-icon bi bi-linkedin mx-2 pb-4 pt-2"></i>
                             </NavLink>
-                            {/* <i className="footer-icon bi bi-twitter mx-3 pb-4 pt-2"></i> */}
-                            {/* <i className="footer-icon bi bi-envelope mx-3 pb-4 pt-2"></i> */}
+                            <NavLink to="mailto:koder_club@gmail.com">
+                                <i className="footer-icon bi bi-envelope mx-2 pb-4 pt-2"></i>
+                            </NavLink>
                         </div>
-                        <div className="justify-content-center align-items-center d-flex">
-                            <button
-                                type="button"
-                                className="my-btn-F btn px-4"
-                                style={{ borderRadius: "30px" }}
-                            >Join US
-                            </button>
-                        </div>
+                        <NavLink to='/member-registration'>
+                            <div className="justify-content-center align-items-center d-flex">
+                                <button
+                                    type="button"
+                                    className="my-btn-F btn px-4"
+                                    style={{ borderRadius: "30px" }}
+                                >Join US
+                                </button>
+                            </div>
+                        </NavLink>
                     </div>
                     <div className="col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Contact Us</h3>

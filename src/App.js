@@ -37,7 +37,7 @@ const App = () => {
       element: <TeamComponent />
     },
     {
-      path: '/contactus',
+      path: '/contact-us',
       element: <ContactComponent />
     },
     {

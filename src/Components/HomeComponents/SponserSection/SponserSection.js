@@ -1,7 +1,7 @@
 import React from 'react'
 import './SponserSection.css'
 import Slider from "react-slick";
-import Bounce from 'react-reveal/Bounce';
+import Slide from 'react-reveal';
 
 const SponserSection = () => {
     const settings = {
@@ -35,38 +35,31 @@ const SponserSection = () => {
             <section className="container-fluid section-sponser">
                 <h2 className="text-center main-sponser-heading">Our Sponsers</h2>
                 <Slider className="customer-logos slider" {...settings}>
-                    <Bounce top>
+                    <Slide left>
                         <div className="slide"><img src="./images/octdaily.png" alt="logo" /></div>
-                    </Bounce>
-                    <Bounce top>
-
+                    </Slide>
+                    <Slide left>
                         <div className="slide"><img src="./images/ned.png" alt="logo" /></div>
-                    </Bounce>
-                    <Bounce top>
-
+                    </Slide>
+                    <Slide left>
                         <div className="slide"><img src="./images/google.png" alt="logo" /></div>
-                    </Bounce>
-                    <Bounce top>
-
+                    </Slide>
+                    <Slide left>
                         <div className="slide"><img src="./images/instagram.png" alt="logo" /></div>
-                    </Bounce>
+                    </Slide>
 
-                    <Bounce right>
-
+                    <Slide right>
                         <div className="slide"><img src="./images/nike.png" alt="logo" /></div>
-                    </Bounce>
-                    <Bounce right>
-
+                    </Slide>
+                    <Slide right>
                         <div className="slide"><img src="./images/twitter.png" alt="logo" /></div>
-                    </Bounce>
-                    <Bounce right>
-
+                    </Slide>
+                    <Slide right>
                         <div className="slide"><img src="./images/uber.png" alt="logo" /></div>
-                    </Bounce>
-                    <Bounce right>
-
+                    </Slide>
+                    <Slide right>
                         <div className="slide"><img src="./images/youtube.png" alt="logo" /></div>
-                    </Bounce>
+                    </Slide>
                 </Slider>
             </section>
         </>

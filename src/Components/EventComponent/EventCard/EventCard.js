@@ -1,6 +1,6 @@
 import React from 'react'
 import './EventCard.css';
-import { IoLocationSharp, IoTodaySharp, IoMailSharp } from "react-icons/io5";
+import { IoLocationSharp, IoTodaySharp} from "react-icons/io5";
 
 const EventCard = ({ imgFirst, imgSecond, imgClass, heading, para, eventDate, loc }) => {
 
@@ -20,14 +20,14 @@ const EventCard = ({ imgFirst, imgSecond, imgClass, heading, para, eventDate, lo
                     <p>{para}</p>
                     <div className="event_icon">
                         <div>
-                            <IoLocationSharp size={25} />
+                            <IoLocationSharp size={27} />
                             <div>
                                 <h4 className=' event-h4'>Location</h4>
                                 <h5>{loc}</h5>
                             </div>
                         </div>
                         <div>
-                            <IoTodaySharp size={25} />
+                            <IoTodaySharp size={27} />
                             <div>
                                 <h4 className=' event-h4'>Date</h4>
                                 <h5>{eventDate}</h5>

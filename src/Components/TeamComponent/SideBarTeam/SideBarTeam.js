@@ -13,7 +13,7 @@ const Sidebar = () => {
         <div className='team-sidebar-div'>
           <IoIosPeople className='team-sidebar-icon' />
           <h2 className='team-sidebar-heading'>Our Team</h2>
-          <p className='team-sidebar-para'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className='team-sidebar-para'>The Club Coding team consists of passionate and skilled individuals with expertise in software development, front-end development, full-stack development, and data analysis/machine learning. They work together to give the most of their knowledge and experience to others</p>
           <NavLink to='/member-registration'
           ><button className='my-sidebar-btn'>Join Us</button>
           </NavLink>

@@ -28,6 +28,10 @@
     justify-content: center;
 }
 
+.link-inner-div > div:hover{
+    text-decoration: underline;
+}
+
 .thirdCol-inner-div {
     font-size: 1.6rem;
 }
