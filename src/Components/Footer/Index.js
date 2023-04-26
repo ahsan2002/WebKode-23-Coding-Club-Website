@@ -39,29 +39,29 @@ const Index = () => {
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3 pt-5">Support On</h3>
                         <div className="justify-content-center align-items-center d-flex"
                             style={{ fontSize: "2rem", gap: "1rem" }}>
-                            <a href="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL" target='_blank'>
+                            <NavLink to="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL" target='_blank'>
                                 <i className="footer-icon bi bi-facebook mx-2 pb-4 pt-2"></i>
-                            </a>
-                            <a href="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D" target='_blank'>
+                            </NavLink>
+                            <NavLink to="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D" target='_blank'>
                                 <i className="footer-icon bi bi-instagram mx-2 pb-4 pt-2"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/koderz-club/" target='_blank'>
-                            <i className="footer-icon bi bi-linkedin mx-2 pb-4 pt-2"></i>
-                            </a>
-                            <a href="mailto:koder_club@gmail.com">
-                            <i className="footer-icon bi bi-envelope mx-2 pb-4 pt-2"></i>
-                            </a>
+                            </NavLink>
+                            <NavLink to="https://www.linkedin.com/company/koderz-club/" target='_blank'>
+                                <i className="footer-icon bi bi-linkedin mx-2 pb-4 pt-2"></i>
+                            </NavLink>
+                            <NavLink to="mailto:koder_club@gmail.com">
+                                <i className="footer-icon bi bi-envelope mx-2 pb-4 pt-2"></i>
+                            </NavLink>
                         </div>
                         <NavLink to='/member-registration'>
-                        <div className="justify-content-center align-items-center d-flex">
-                            <button
-                                type="button"
-                                className="my-btn-F btn px-4"
-                                style={{ borderRadius: "30px" }}
-                            >Join US
-                            </button>
-                        </div>
-                            </NavLink>
+                            <div className="justify-content-center align-items-center d-flex">
+                                <button
+                                    type="button"
+                                    className="my-btn-F btn px-4"
+                                    style={{ borderRadius: "30px" }}
+                                >Join US
+                                </button>
+                            </div>
+                        </NavLink>
                     </div>
                     <div className="col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Contact Us</h3>

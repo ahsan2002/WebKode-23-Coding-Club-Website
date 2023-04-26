@@ -7,7 +7,7 @@ const RecentCard = () => {
             <div className='recent-card'>
                 <div className='recent-post--img'>
 
-                    <img src="./images/recent-card-1.jpeg" alt="" />
+                    <img src="/images/recent-card-1.jpeg" alt="" />
                 </div>
                 <div className='recent-card-content'>
                     <NavLink className={'recent-link'} to={'#'}>

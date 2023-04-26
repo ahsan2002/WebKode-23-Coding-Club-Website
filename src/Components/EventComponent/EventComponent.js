@@ -10,11 +10,13 @@ const index = () => {
         <Layout>
             <EventHeader />
             <div className='container'>
-                <div className='row'>
-                    <div className='col-10 col-lg-12 col-md-12'>
-                        <h2>Previous</h2>
-                        <h2>Ongoing</h2>
-                        <h2>Upcoming</h2>
+                <div className='row d-flex justify-content-center'>
+                    <div className='col-10 col-lg-4 col-md-4'>
+                        <div className='event-nav'>
+                            <h2 className='event-nav-h2'>Previous</h2>
+                            <h2 className='event-nav-h2'>Ongoing</h2>
+                            <h2 className='event-nav-h2'>Upcoming</h2>
+                        </div>
                     </div>
                 </div>
             </div>
