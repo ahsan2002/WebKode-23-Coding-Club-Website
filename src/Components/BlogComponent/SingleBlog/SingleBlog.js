@@ -22,7 +22,6 @@ const SingleBlog = () => {
             return blog.id === id
         })
         setSingleBlogdata(data)
-        console.log(data)
     }
     useEffect(() => {
         getSingleBlog(id)

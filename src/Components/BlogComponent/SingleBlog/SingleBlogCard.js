@@ -3,7 +3,7 @@ import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { TbWorld } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 
-const SingleBlogCard = ({ authorName, authorImg, blogCategory, blogDate, blogImg, blogHeading, blogAbout, blogPara }) => {
+const SingleBlogCard = ({ authorName, authorImg, blogCategory, blogDate, blogImg, blogHeading, blogAbout, blogParaOne, blogParaTwo, blogParaThree, blogParaFour }) => {
     return (
         <><div className='main-single-blog'>
             <div className='single-blog-first-div'>
@@ -18,7 +18,10 @@ const SingleBlogCard = ({ authorName, authorImg, blogCategory, blogDate, blogImg
                 <h2 className='single-blog-heading'>{blogHeading}</h2>
                 <p className='single-blog-about'>{blogAbout}</p>
                 <img className='single-blog-img' src={blogImg} alt="ff" />
-                <p className='single-blog-para'>{blogPara}</p>
+                <p className='single-blog-para'>{blogParaOne}</p>
+                <p className='single-blog-para'>{blogParaTwo}</p>
+                <p className='single-blog-para'>{blogParaThree}</p>
+                <p className='single-blog-para'>{blogParaFour}</p>
                 <hr className='single-blog-hr' />
             </div>
             <div className='single-blog-fourth-div'>

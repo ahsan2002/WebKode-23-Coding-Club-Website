@@ -5,7 +5,7 @@ import './Card.css';
 import Slide from 'react-reveal/Slide';
 
 const CardBlog = ({
-    id, authorName, authorDesignation, authorImg, blogCategory, blogDate, blogImg, blogHeading, blogAbout, blogQutation, blogPara
+    id, authorName, authorDesignation, authorImg, blogCategory, blogDate, blogImg, blogHeading, blogAbout
 }) => {
     return (
         <>
