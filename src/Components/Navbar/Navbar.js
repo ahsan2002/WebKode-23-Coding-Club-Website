@@ -39,7 +39,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li>
-                            <NavLink to='/contactus' className='navbar-link home-link'
+                            <NavLink to='/contact-us' className='navbar-link home-link'
                                 onClick={() => { setActiveMenu(false) }}>Contact Us</NavLink>
                         </li>
                     </ul>

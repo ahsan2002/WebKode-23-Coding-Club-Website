@@ -11,7 +11,7 @@ const Sidebar = () => {
                 <div className='member-sidebar-div'>
                     <BsPencilSquare className='member-sidebar-icon' />
                     <h2 className='member-sidebar-heading'>Member Registration</h2>
-                    <p className='member-sidebar-para'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className='member-sidebar-para'>Become the part of the Biggest Coding Community of NED.</p>
                     <NavLink to='/team'
                     ><button className='my-sidebar-member-btn'>Our Team</button>
                     </NavLink>

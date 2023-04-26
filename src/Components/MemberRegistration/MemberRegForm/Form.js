@@ -9,7 +9,7 @@ const Form = () => {
             <section className="member-section">
                 <div className="row mx-auto">
                     <div className="col-12 col-lg-12 col-md-12 member_reg_leftside mx-auto">
-                        <form action='https://formspree.io/f/mdovpvnj' method='POST'>
+                        <form action='https://formspree.io/f/moqzyzal' method='POST'>
                             <div className="row">
                                 <div style={{ textAlign: 'center', marginBottom: '20px' }}>
                                     <label htmlFor="member-img" className='rotateY'>

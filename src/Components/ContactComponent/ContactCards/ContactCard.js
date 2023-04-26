@@ -15,7 +15,7 @@ const ContactCard = () => {
         {
             img: <IoPhonePortrait size={50} />,
             heading: 'Phone',
-            description: "0318-2933679"
+            description: "0318-2936379"
 
         },
         {
