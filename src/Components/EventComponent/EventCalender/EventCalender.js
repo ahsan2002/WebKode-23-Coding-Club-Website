@@ -8,7 +8,7 @@ const EventCalender = () => {
     return (
         <>
             <div>
-                <Calendar onChange={onChange} value={[Date(2023, 5, 4), new Date(2023, 5, 9)]} />
+                <Calendar onChange={onChange} value={value} />
             </div>
         </>
     )
