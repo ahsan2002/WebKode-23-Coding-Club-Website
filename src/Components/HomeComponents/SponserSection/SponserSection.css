@@ -91,7 +91,8 @@
 
 @media only screen and (max-width: 768px) {
     .section-sponser {
-        height: 50vh;
+        height: 40vh;
+        gap: 3rem;
     }
 
     .slick-slide img {

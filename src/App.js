@@ -2,11 +2,12 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomeComponent from './Components/HomeComponents'
 import AboutComponent from './Components/AboutComponent'
-import BlogComponent from './Components/BlogComponent'
+import BlogComponent from './Components/BlogComponent/BlogComponent'
 import EventComponent from './Components/EventComponent/EventComponent'
 import TeamComponent from './Components/TeamComponent'
 import ContactComponent from './Components/ContactComponent'
 import MemberReg from './Components/MemberRegistration/MemberReg'
+import SingleBlog from './Components/BlogComponent/SingleBlog/SingleBlog'
 
 const App = () => {
   /** Root Routes */
@@ -22,6 +23,10 @@ const App = () => {
     {
       path: '/blogs',
       element: <BlogComponent />
+    },
+    {
+      path: '/blogs/blog-detail/:id',
+      element: <SingleBlog />
     },
     {
       path: '/events',

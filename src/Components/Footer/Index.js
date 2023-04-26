@@ -39,15 +39,15 @@ const Index = () => {
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3 pt-5">Support On</h3>
                         <div className="justify-content-center align-items-center d-flex"
                             style={{ fontSize: "2rem", gap: "1rem" }}>
-                            <a href="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL" target='_blank'>
+                            <NavLink to="https://www.facebook.com/profile.php?id=100087510656043&mibextid=ZbWKwL">
                                 <i className="footer-icon bi bi-facebook mx-3 pb-4 pt-2"></i>
-                            </a>
-                            <a href="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D" target='_blank'>
+                            </NavLink>
+                            <NavLink to="https://www.instagram.com/koderzclub/?igshid=YmMyMTA2M2Y%3D">
                                 <i className="footer-icon bi bi-instagram mx-3 pb-4 pt-2"></i>
-                            </a>
-                            <a href="" target='_blank'>
+                            </NavLink>
+                            <NavLink to="#">
                                 <i className="footer-icon bi bi-whatsapp mx-3 pb-4 pt-2"></i>
-                            </a>
+                            </NavLink>
                             {/* <i className="footer-icon bi bi-twitter mx-3 pb-4 pt-2"></i> */}
                             {/* <i className="footer-icon bi bi-envelope mx-3 pb-4 pt-2"></i> */}
                         </div>

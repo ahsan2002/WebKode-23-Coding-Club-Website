@@ -4,29 +4,31 @@ import { NavLink } from 'react-router-dom'
 import './Card.css';
 import Slide from 'react-reveal/Slide';
 
-const CardBlog = () => {
+const CardBlog = ({
+    id, authorName, authorDesignation, authorImg, blogCategory, blogDate, blogImg, blogHeading, blogAbout, blogQutation, blogPara
+}) => {
     return (
         <>
             <Slide left>
-                <NavLink className='blog-card-div'>
+                <NavLink className='blog-card-div' to={`/blogs/blog-detail/${id}`}>
                     <div className='blog-card-img-div card-data--img'>
-                        <img className=' img-fluid' src="./images/blog-1.jpeg" alt="" />
+                        <img className=' img-fluid' src={blogImg} alt="" />
                     </div>
                     <div className='blog-card-content'>
                         <div className='category-date-div'>
-                            <p className='blog-category'>Business, Travel</p>
-                            <p className='blog-date'>— July 2, 2020</p>
+                            <p className='blog-category'>{blogCategory}</p>
+                            <p className='blog-date'>{blogDate}</p>
                         </div>
                         <div className='blog-card-inner-content'>
                             <div className='blog-info'>
-                                <h3 className='blog-heading'>Your most unhappy customers are your greatest source of learning.</h3>
-                                <p className='blog-para'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <h3 className='blog-heading'>{blogHeading}</h3>
+                                <p className='blog-para'>{blogAbout}</p>
                             </div>
                             <div className='author-div'>
-                                <img className='author-img' src="./images/person-1.jpeg" alt="" />
+                                <img className='author-img' src={authorImg} alt="" />
                                 <div className='author-info'>
-                                    <h3 className='author-name'>Sergy Campbell</h3>
-                                    <p className='author-designation'>CEO and Founder</p>
+                                    <h3 className='author-name'>{authorName}</h3>
+                                    <p className='author-designation'>{authorDesignation}</p>
                                 </div>
                             </div>
                         </div>
