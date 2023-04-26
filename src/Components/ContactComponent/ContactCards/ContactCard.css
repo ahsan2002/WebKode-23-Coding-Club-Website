@@ -1,0 +1,43 @@
+.contact_card_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 60px 0px;
+}
+
+
+.card-contact {
+    display: flex;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 15px;
+    padding: 2.5rem 3.1rem 2.5rem 3.1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+
+.card-contact h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.card-contact p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.card-contact:hover {
+    /* color: white; */
+    background: linear-gradient(to left, #141e30, #243b55);
+}
