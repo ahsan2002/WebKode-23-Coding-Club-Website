@@ -3,6 +3,7 @@ import Layout from '../../../Layout/index'
 import EventPageHeader from './EventPageHeader/EventPageHeader'
 import EventPageAbout from './EventPageAbout/EventPageAbout'
 import EventPageCard from './EventPageCard/EventPageCard'
+import EventPageInfo from './EventPageInfo/EventPageInfo'
 
 const EventPage = () => {
     return (
@@ -10,6 +11,7 @@ const EventPage = () => {
             <EventPageHeader />
             <EventPageAbout />
             <EventPageCard />
+            <EventPageInfo/>
         </Layout>
 
     )

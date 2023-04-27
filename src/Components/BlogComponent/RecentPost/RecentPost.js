@@ -7,9 +7,6 @@ const RecentPost = () => {
         <div className='main-recentpost'>
             <h3 className='recentpost-heading'>Recent Post</h3>
             <RecentCard />
-            <RecentCard />
-            <RecentCard />
-            <RecentCard />
         </div>
     )
 }

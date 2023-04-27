@@ -2,6 +2,7 @@ import React from 'react'
 import './EventCard.css';
 import { NavLink } from 'react-router-dom'
 import { IoLocationSharp, IoTodaySharp } from "react-icons/io5";
+import Slide from 'react-reveal'
 
 const EventCard = ({ id, direction, imgFirst, imgSecond, imgClass, heading, para, eventDate, loc }) => {
 
@@ -9,6 +10,7 @@ const EventCard = ({ id, direction, imgFirst, imgSecond, imgClass, heading, para
     return (
 
         <>
+        <Slide left>
             <NavLink to={`/events/event-detail/${id}`} className="row" style={{ flexDirection: direction }}>
                 <div className='event-left-col col-10 col-lg-4 col-md-4 mx-auto'>
                     <div className="event_card_img">
@@ -39,6 +41,7 @@ const EventCard = ({ id, direction, imgFirst, imgSecond, imgClass, heading, para
                     </div>
                 </div>
             </NavLink>
+            </Slide>
         </>
 
 
