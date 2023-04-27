@@ -1,6 +1,6 @@
 import React from 'react'
 import './EventCard.css';
-import { IoLocationSharp, IoTodaySharp} from "react-icons/io5";
+import { IoLocationSharp, IoTodaySharp } from "react-icons/io5";
 
 const EventCard = ({ imgFirst, imgSecond, imgClass, heading, para, eventDate, loc }) => {
 

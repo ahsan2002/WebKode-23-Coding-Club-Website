@@ -1,5 +1,5 @@
 .event-topper-div {
-    height: 30rem;
+    height: 32rem;
     margin: 4rem 0rem 0rem 0rem;
     background-color: #1a2238;
     color: #fff;
@@ -14,4 +14,10 @@
 .event-topper-para {
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+@media (max-width: 798px) {
+    .event-topper-div {
+        height: 65rem;
+    }
 }

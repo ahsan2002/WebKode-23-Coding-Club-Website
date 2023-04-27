@@ -80,7 +80,7 @@ main {
   text-align: justify;
   line-height: 22px;
   font-family: 'Poppins', sans-serif !important;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #888;
 }
@@ -88,4 +88,24 @@ main {
 .icon {
   font-size: 1.2rem;
   text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 50px 20px 12px 20px;
+    gap: 3.5rem;
+  }
+
+  .main_card {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-content h2 {
+    word-spacing: 110px;
+  }
+
 }
