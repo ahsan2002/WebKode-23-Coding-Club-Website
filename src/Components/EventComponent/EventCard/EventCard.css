@@ -65,6 +65,7 @@
     align-items: center;
     justify-content: space-between;
 
+    color: #1a2238;
 }
 
 .event_icon>div {
@@ -72,13 +73,16 @@
     gap: 10px;
     justify-content: center;
     align-items: flex-start;
+    color: #1a2238;
 }
 
 .event_icon>div>h5 {
     margin-left: 20px;
+    color: #1a2238;
 }
 
 .event_icon_inner {
+    color: #1a2238;
     display: flex;
     gap: 5px;
     justify-content: center;
@@ -88,6 +92,7 @@
 .event-h4 {
     font-weight: 700;
     font-size: 1.7rem;
+    color: #1a2238;
 }
 
 
@@ -95,6 +100,7 @@
     font-size: 5rem;
     line-height: 120%;
     font-weight: 700;
+    color: #1a2238;
 }
 
 .event_card_desc p {
@@ -102,6 +108,7 @@
     font-weight: 400;
     text-align: justify;
     width: 40rem;
+    color: #1a2238;
 }
 
 
