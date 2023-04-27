@@ -41,9 +41,7 @@ const EventComponent = () => {
                 {
                     events.map((event, i) => {
                         return (
-                            <div className="row" style={{ flexDirection: event.direction }}>
-                                <EventCard {...event} key={i} />
-                            </div>
+                            <EventCard {...event} key={i} />
                         )
                     })
                 }

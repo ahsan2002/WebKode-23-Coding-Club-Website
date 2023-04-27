@@ -4,6 +4,7 @@ import HomeComponent from './Components/HomeComponents'
 import AboutComponent from './Components/AboutComponent'
 import BlogComponent from './Components/BlogComponent/BlogComponent'
 import EventComponent from './Components/EventComponent/EventComponent'
+import EventPage from './Components/EventComponent/EventPage/EventPage'
 import TeamComponent from './Components/TeamComponent'
 import ContactComponent from './Components/ContactComponent'
 import MemberReg from './Components/MemberRegistration/MemberReg'
@@ -31,6 +32,10 @@ const App = () => {
     {
       path: '/events',
       element: <EventComponent />
+    },
+    {
+      path: '/events/event-detail/:id',
+      element: <EventPage />
     },
     {
       path: '/team',

@@ -3,23 +3,22 @@ import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { TbWorld } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 import Slide from 'react-reveal'
-import Fade from 'react-reveal/Fade'
 import Flip from 'react-reveal/Flip'
 
 const SingleBlogCard = ({ authorName, authorImg, blogCategory, blogDate, blogImg, blogHeading, blogAbout, blogParaOne, blogParaTwo, blogParaThree, blogParaFour }) => {
     return (
         <><div className='main-single-blog'>
-        <Slide top>
-            <div className='single-blog-first-div'>
-                <img className='single-blog-author-img' src={authorImg} alt="ff" />
-                <h3 className='single-blog-author-name' >{authorName}</h3>
-            </div>
+            <Slide top>
+                <div className='single-blog-first-div'>
+                    <img className='single-blog-author-img' src={authorImg} alt="ff" />
+                    <h3 className='single-blog-author-name' >{authorName}</h3>
+                </div>
             </Slide>
             <Slide left>
-            <div className='single-blog-second-div'>
-                <p className='single-blog-category'>{blogCategory}</p>
-                <p className='single-blog-date'>- {blogDate}</p>
-            </div>
+                <div className='single-blog-second-div'>
+                    <p className='single-blog-category'>{blogCategory}</p>
+                    <p className='single-blog-date'>- {blogDate}</p>
+                </div>
             </Slide>
             <div className='single-blog-third-div'>
                 <h2 className='single-blog-heading'>{blogHeading}</h2>
@@ -32,8 +31,8 @@ const SingleBlogCard = ({ authorName, authorImg, blogCategory, blogDate, blogImg
                 <hr className='single-blog-hr' />
             </div>
             <div className='single-blog-fourth-div'>
-            <Slide left>
-                <h3>Share</h3>
+                <Slide left>
+                    <h3>Share</h3>
                 </Slide>
                 <div className='single-blog-icon-div'>
                     <Flip right> <NavLink className={'single-blog-icon'} to={'#'}><BsFacebook /></NavLink></Flip>
