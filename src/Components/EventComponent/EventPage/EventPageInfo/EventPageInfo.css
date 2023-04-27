@@ -1,0 +1,17 @@
+.event-page-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding-top: 200px;
+}
+
+.event-page-info-data {
+    display: flex;
+    gap: 15px;
+}
+
+
+

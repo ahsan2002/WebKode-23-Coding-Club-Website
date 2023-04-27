@@ -1,8 +1,9 @@
 import React from 'react'
+import EventPageInfo from './EventPageInfo/EventPageInfo'
 
 const EventPage = () => {
     return (
-        <div>EventPage</div>
+        <EventPageInfo></EventPageInfo>
     )
 }
 
