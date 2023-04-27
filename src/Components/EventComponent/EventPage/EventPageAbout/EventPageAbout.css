@@ -1,0 +1,35 @@
+.event-page-about-heading>hr {
+    width: 5% !important;
+    text-align: left;
+    margin-left: 0;
+    color: #1a2238;
+    height: 18;
+    border: 2.89px solid;
+}
+
+.event-page-about-heading>h2 {
+    font-size: 2.7rem;
+}
+
+.para-1 p,
+.para-2 p {
+    margin: 1rem 0 0rem 0;
+    width: 92%;
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .event-page-about-heading {
+        margin: 3rem 0rem 0rem 2rem;
+    }
+
+    .event-page-about-heading>hr {
+        width: 15% !important;
+    }
+
+}
