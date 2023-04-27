@@ -63,7 +63,7 @@
 .event_icon {
     display: flex;
     align-items: center;
-    gap: 18rem;
+    justify-content: space-between;
 
 }
 
@@ -84,11 +84,6 @@
     justify-content: center;
     align-items: center;
 }
-
-/* .event_icon_inner>h4 {
-    margin-top: 4px;
-    font-size: 1.7rem;
-} */
 
 .event-h4 {
     font-weight: 700;
@@ -113,8 +108,40 @@
 
 
 @media only screen and (max-width: 768px) {
-    .event_card_img img {
-        width: 320px;
-        height: 250px;
+
+    .event-left-col {
+        width: 100%;
+    }
+
+
+    .event_card_main_img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .event_card_sec_row_img {
+        top: 155px;
+        right: -14px;
+        height: 20rem;
+    }
+
+    .event_card_sec_reverse_img {
+        top: 155px;
+        left: -14px;
+        right: unset;
+        height: 20rem;
+    }
+
+    .event-right-col {
+        width: 100%;
+    }
+
+    .event_card_desc p {
+        width: 100%;
+    }
+
+    .event_icon {
+        gap: 0px;
+        justify-content: space-between;
     }
 }
