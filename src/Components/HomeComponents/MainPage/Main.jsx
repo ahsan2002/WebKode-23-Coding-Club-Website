@@ -10,7 +10,7 @@ const Main = () => {
 
         <Fade right>
           <div className="intro">
-            <h1>Koderz Club</h1>
+            <h1>Koder'z Club</h1>
             <p>Official Community of The Department of <br /> Computer Science & Information Technology, NEDUET</p>
             <Fade bottom>
 
