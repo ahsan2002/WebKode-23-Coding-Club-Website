@@ -3,6 +3,7 @@ import "../EventPageInfo/EventPageInfo.css";
 import { AiTwotoneCalendar } from "react-icons/ai";
 import { IoLocationOutline, IoTicketOutline } from "react-icons/io5";
 import { IoIosPerson } from "react-icons/io";
+import Fade from 'react-reveal/Fade';
 
 
 const EventPageInfo = ({ loc }) => {
@@ -19,6 +20,7 @@ const EventPageInfo = ({ loc }) => {
   ];
   return (
     <>
+    <Fade right>
       <div className="event-page-info">
         {data.map((elem, i) => (
           <div className="event-page-info-data">
@@ -32,6 +34,7 @@ const EventPageInfo = ({ loc }) => {
           </div>
         ))}
       </div>
+      </Fade>
     </>
   );
 };
