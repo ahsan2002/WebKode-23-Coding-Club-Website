@@ -1,7 +1,8 @@
 import React from "react";
 import Countdown from 'react-countdown';
 
-const EventCountDown = () => {
+const EventCountDown = ({ event_Date }) => {
+
 
     // Renderer callback with condition
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -72,7 +73,7 @@ const EventCountDown = () => {
 
     return (
         <Countdown
-            date={new Date('1 june 2023')}
+            date={new Date(event_Date)}
             renderer={renderer}
         />
     );

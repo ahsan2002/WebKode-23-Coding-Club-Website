@@ -49,9 +49,17 @@
     ;
 }
 
+.right-col-countdown {
+    justify-content: center;
+}
+
 @media (max-width: 798px) {
     .event-page-header-div {
-        height: 65rem;
+        height: 50rem;
+    }
+
+    .right-col-countdown {
+        align-items: flex-start;
     }
 }
 

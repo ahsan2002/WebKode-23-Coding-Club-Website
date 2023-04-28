@@ -1,0 +1,34 @@
+.event-page-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 65px;
+    padding-bottom: 50px;
+}
+
+.event-page-info-data {
+    display: flex;
+    gap: 12px;
+}
+
+.event-page-info-h4 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #1a2238;
+}
+
+.event-page-info-p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #888;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .event-page-info {
+        gap: 30px;
+        column-gap: 2rem;
+    }
+}
