@@ -1,8 +1,16 @@
 import React from 'react'
+import './EventPageGallery.css'
 
 const EventPageGallery = () => {
     return (
-        <div>EventPageGallery</div>
+        <>
+            <div className="event-gallery-main">
+
+                    
+
+
+            </div>
+        </>
     )
 }
 
