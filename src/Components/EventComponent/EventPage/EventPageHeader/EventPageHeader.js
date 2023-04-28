@@ -3,17 +3,19 @@ import EventCountDown from './EventCountDown'
 import './EventPageHeader.css'
 import EventPageForm from '../EventPageForm/EventPageForm'
 
-const EventPageHeader = () => {
+
+const EventPageHeader = ({ heading, eventDate }) => {
+
     return (
         <>
             <div className='container'>
                 <div className="row event-page-header-div">
                     <div className=" d-flex flex-column justify-content-center col-10 col-lg-4 col-md-4 mx-auto" style={{ gap: "5px" }}>
-                        <h2 className='event-page-header-h2'>Event Calendar</h2>
+                        <h2 className='event-page-header-h2'>{heading}</h2>
                         <p className='event-page-header-para'>The Tech Events featured in this list take place throughout the year and cover a wide range of different industries.</p>
                     </div>
-                    <div className="d-flex justify-content-center col-10 col-lg-4 col-md-4 mx-auto">
-                        <EventCountDown />
+                    <div className="d-flex right-col-countdown col-10 col-lg-4 col-md-4 mx-auto">
+                        <EventCountDown event_Date={eventDate} />
                     </div>
                 </div>
             </div>

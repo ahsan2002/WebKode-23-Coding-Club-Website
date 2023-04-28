@@ -3,6 +3,7 @@ import './EventPageCard.css'
 import { BiMicrophone } from "react-icons/bi";
 import { IoRocketOutline } from "react-icons/io5";
 import { AiOutlineClockCircle } from "react-icons/ai";
+import Fade from 'react-reveal/Fade'
 
 const EventPageCard = () => {
     const data = [
@@ -27,6 +28,7 @@ const EventPageCard = () => {
       ]
     return (
         <>
+              <Fade right>
             <div className="event-page-card-main">
 
             {
@@ -52,6 +54,7 @@ const EventPageCard = () => {
               }))
             }
             </div>
+                  </Fade>
         </>
     )
 }
