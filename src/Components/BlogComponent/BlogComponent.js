@@ -35,7 +35,7 @@ const BlogComponent = () => {
                             <div class="blog-right-col col-11 col-lg-4 col-md-4 mx-auto">
                                 <SearchBarBlog />
                                 <Category />
-                                <RecentPost />
+                                <RecentPost  />
                                 <TagCloud />
                             </div>
                         </div>

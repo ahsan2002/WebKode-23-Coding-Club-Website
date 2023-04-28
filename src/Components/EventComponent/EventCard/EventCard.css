@@ -111,7 +111,10 @@
     color: #1a2238;
 }
 
-
+.event-main-card-row:hover {
+    border: 3px solid #1a2238;
+    border-radius: 20px;
+}
 
 
 @media only screen and (max-width: 768px) {

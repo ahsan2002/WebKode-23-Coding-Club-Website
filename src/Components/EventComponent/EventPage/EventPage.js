@@ -4,6 +4,7 @@ import EventPageHeader from './EventPageHeader/EventPageHeader'
 import EventPageAbout from './EventPageAbout/EventPageAbout'
 import EventPageCard from './EventPageCard/EventPageCard'
 import EventPageInfo from './EventPageInfo/EventPageInfo'
+import EventPageGallery from './EventPageGallery/EventPageGallery'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
@@ -29,6 +30,7 @@ const EventPage = () => {
             <EventPageHeader {...singleEventdata} />
             <EventPageAbout />
             <EventPageCard />
+            <EventPageGallery />
             <EventPageInfo {...singleEventdata} />
         </Layout>
 

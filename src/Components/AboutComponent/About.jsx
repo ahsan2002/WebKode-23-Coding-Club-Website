@@ -13,7 +13,7 @@ const aboutCardData = [
   {
     heading: 'OUR VISION',
     para: 'Our vision is to become the go-to destination for coding enthusiasts around the world. We want to create a platform that is accessible to everyone, regardless of their skill level or background.',
-    img: './images/Vision.jpg',
+    img: './images/Vision2.jpg',
   },
 ]
 

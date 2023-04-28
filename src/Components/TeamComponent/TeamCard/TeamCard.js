@@ -2,7 +2,7 @@ import React from 'react'
 import './TeamCard.css';
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 
-const TeamCard = () => {
+const TeamCard = ({ name }) => {
   return (
     <>
       <div class="team_card">
@@ -11,8 +11,8 @@ const TeamCard = () => {
         </div>
 
         <div className='team_content'>
-          <h3>Ahsan Omerjee</h3>
-          <h5>President</h5>
+          <h3>{name}</h3>
+          <h5>CSIT' 2020</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, eligendi? Sit, impedit unde quod adipisci esse possimus ipsum! Eum harum perferendis hic facilis. Nihil, atque.</p>
           <div className="icons">
             <div><FiFacebook size={23} color='#1A2238' /></div>
