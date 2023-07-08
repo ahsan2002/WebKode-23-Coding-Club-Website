@@ -5,6 +5,21 @@ import './Team.css';
 import SideBarTeam from './SideBarTeam/SideBarTeam';
 
 const index = () => {
+
+    const data = [{
+        name: 'Ahsan Omerjee',
+    },
+    {
+        name: 'Daniyal Saleem'
+    },
+    {
+        name: 'Obaid Ur Rehman'
+    },
+    {
+        name: 'Sadaqat Mustafa'
+    },
+    ]
+
     return (
         <>
             <Layout>
@@ -14,10 +29,11 @@ const index = () => {
                             <SideBarTeam />
                         </div>
                         <div class="team-right-col col-11 col-lg-8 col-md-8 mx-auto">
-                            <TeamCard />
-                            <TeamCard />
-                            <TeamCard />
-                            <TeamCard />
+                            {
+                                data.map((member, i) => {
+                                    return <TeamCard {...member} key={i} />
+                                })
+                            }
                         </div>
                     </div>
                 </div>

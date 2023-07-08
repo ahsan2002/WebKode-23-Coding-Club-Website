@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-.rotateY-team-img:hover {
+/* .rotateY-team-img:hover {
     transform: rotateY(360deg);
     -moz-transform: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
@@ -46,7 +46,7 @@
     transition: 2.0s ease;
     -moz-transition: 2.0s ease;
     -webkit-transition: 2.0s ease;
-}
+} */
 
 .team_content {
     display: flex;
