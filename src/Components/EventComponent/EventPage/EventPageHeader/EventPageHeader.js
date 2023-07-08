@@ -28,7 +28,7 @@ const EventPageHeader = ({ heading, eventDate }) => {
                     </div>
                 </div>
             </div>
-            <EventPageForm />
+            <EventPageForm heading={heading}  />
         </>
     )
 }
