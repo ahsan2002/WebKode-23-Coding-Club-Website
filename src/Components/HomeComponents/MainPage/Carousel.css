@@ -1,0 +1,142 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 80dvh;
+    /* height: calc(100dvh - 60px); */
+    height: 100dvh;
+    overflow: hidden;
+}
+
+/* 
+span.title {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* .grayscale {
+    /* filter: grayscale(100%); 
+} */
+
+.carousel-button-container {
+    display: flex;
+    gap: 4rem;
+    margin-top: 30px;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    filter: brightness(60%);
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.my-btn-carousel{
+    color: white;
+    background: linear-gradient(to right, #141e30, #243b55);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: width 1s ease;
+    width: 14rem !important;
+    font-size: 1.5rem;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-content-container.active {
+    opacity: 1;
+}
+
+.carousel-content {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    color: white;
+    text-align: center;
+    filter: brightness(1000%);
+    filter: saturate(200%);
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.carousel-content {
+    letter-spacing: 8px;
+}
+
+.carousel-content h1 {
+    font-size: 6rem;
+}
+
+.carousel-content .subHeading {
+    font-size: 3rem;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .carousel-content h1 {
+        font-size: 5rem;
+    }
+
+    .carousel-content .subHeading {
+        font-size: 2.5rem;
+        letter-spacing: 7px;
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 100dvh;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .carousel-content h1 {
+        font-size: 3rem;
+    }
+
+    .carousel-content .subHeading {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+}

@@ -48,7 +48,7 @@
 }
 
 
-.event-register-input:focus+.separator {
+.event-register-input:focus+.event-register-separator{
     transform: scaleX(1) translateY(-2px);
     opacity: 1;
 }
