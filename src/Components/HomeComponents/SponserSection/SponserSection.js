@@ -1,7 +1,6 @@
 import React from 'react'
 import './SponserSection.css'
 import Slider from "react-slick";
-import Slide from 'react-reveal';
 
 const SponserSection = () => {
     const settings = {
@@ -30,36 +29,25 @@ const SponserSection = () => {
     };
     return (
         <>
-
-
-            <section className="container-fluid section-sponser">
-                <h2 className="text-center main-sponser-heading">Our Sponsers</h2>
+            <section className="container-fluid section-sponser mt-5">
+                <div className='container mt-5'>
+                    <h1 className='main-sponser-heading fw-bold'>Our Sponsers</h1>
+                </div>
                 <Slider className="customer-logos slider" {...settings}>
-                    <Slide left>
-                        <div className="slide"><img src="./images/octdaily.png" alt="logo" /></div>
-                    </Slide>
-                    <Slide left>
-                        <div className="slide"><img src="./images/ned.png" alt="logo" /></div>
-                    </Slide>
-                    <Slide left>
-                        <div className="slide"><img src="./images/google.png" alt="logo" /></div>
-                    </Slide>
-                    <Slide left>
-                        <div className="slide"><img src="./images/instagram.png" alt="logo" /></div>
-                    </Slide>
 
-                    <Slide right>
-                        <div className="slide"><img src="./images/nike.png" alt="logo" /></div>
-                    </Slide>
-                    <Slide right>
-                        <div className="slide"><img src="./images/twitter.png" alt="logo" /></div>
-                    </Slide>
-                    <Slide right>
-                        <div className="slide"><img src="./images/uber.png" alt="logo" /></div>
-                    </Slide>
-                    <Slide right>
-                        <div className="slide"><img src="./images/youtube.png" alt="logo" /></div>
-                    </Slide>
+                    {/* <div className="slide"><img src="./images/spons.png" alt="logo" /></div> */}
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b2.png" alt="logo" /></div>
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b3.png" alt="logo" /></div>
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b4.png" alt="logo" /></div>
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b4.png" alt="logo" /></div>
+
+                    {/* <div className="slide"><img src="./images/spons.png" alt="logo" /></div> */}
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b2.png" alt="logo" /></div>
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b3.png" alt="logo" /></div>
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b4.png" alt="logo" /></div>
+                    <div className="slide"><img src="https://preview.colorlib.com/theme/evento/assets/img/brands/b4.png" alt="logo" /></div>
+
+
                 </Slider>
             </section>
         </>

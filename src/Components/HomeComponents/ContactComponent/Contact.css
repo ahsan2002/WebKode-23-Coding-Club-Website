@@ -103,6 +103,13 @@
     border-color: #1A2238;
 }
 
+
+.main-contact-heading{
+    border-left: 6px solid rgb(211, 40, 40);
+    /* padding-left: 15px; */
+    font-size: 4rem;
+}
+
 .contact-rightside form .main-work-para {
     margin: 0 !important;
     width: 75%;

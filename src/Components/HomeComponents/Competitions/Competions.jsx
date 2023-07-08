@@ -1,77 +1,69 @@
 import React from 'react'
-import "./Competions.css"
-// import ComputerIcon from '@mui/icons-material/Computer';
-// import { purple } from '@mui/material/colors';
-// import { MdComputer } from "react-icons/md";
-import Slide from 'react-reveal/Slide';
+import './Competions.css'
+import Countdownbox from './Countdownbox';
+import { BsFillMicFill } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
+import { FcPositiveDynamic, FcBiohazard, FcAutomotive } from "react-icons/fc";
 
 const Competions = () => {
+    return (
+        <>
+            <div className='container aligncenter flex-column' style={{marginTop:'50px'}}>
+                <div className="row row-upper w-100">
+                    <div className="col">
+                        <h1 className='main-sponser-heading fw-bold'>Latest Events</h1>
+                        <p className='fs-4 my-4' style={{ textAlign: "justify" }}>Explore the cutting-edge world of RCai with the latest updates on groundbreaking advancements, innovative applications, and transformative breakthroughs. Discover the future of artificial intelligence and robotics on our website.</p>
+                    </div>
+                    <div className="col">
+                        <Countdownbox />
+                    </div>
+                </div>
+                <div className="row row-lower my-4 w-100">
+                    <div className=" col-10 col-md-3 event-card-col aligncenter">
+                        <div class="card eventcard">
+                            <BsFillMicFill size="60px" color='purple' />
+                            <div class="card-body latest-event-card-body">
+                                <h5 class="card-title latest-event-h5">Fintech Summit</h5>
+                                <p class="card-text latest-event-p">Exploring the convergence of finance and technology, showcasing the latest innovations in the fintech industry.</p>
+                                <NavLink to="/" className="latest-event-link">Read More</NavLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-10 col-md-3 event-card-col aligncenter">
+                        <div class="card eventcard">
+                            <FcPositiveDynamic size="60px" color='purple' />
+                            <div class="card-body latest-event-card-body">
+                                <h5 class="card-title latest-event-h5">Design Thinking</h5>
+                                <p class="card-text latest-event-p">A hands-on workshop introducing design thinking principles and methodologies for problem-solving and innovation.</p>
+                                <NavLink to="/" className="latest-event-link">Read More</NavLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-10 col-md-3 event-card-col aligncenter">
+                        <div class="card eventcard">
+                            <FcBiohazard size="60px" color='purple' />
+                            <div class="card-body latest-event-card-body">
+                                <h5 class="card-title latest-event-h5">Future of Health</h5>
+                                <p class="card-text latest-event-p">Addressing pressing environmental challenges, sustainable practices, and strategies for a greener future.</p>
+                                <NavLink to="/" className="latest-event-link">Read More</NavLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-10 col-md-3 event-card-col aligncenter">
+                        <div class="card eventcard">
+                            <FcAutomotive size="60px" color='purple' />
+                            <div class="card-body latest-event-card-body">
+                                <h5 class="card-title latest-event-h5">NFT Summit</h5>
+                                <p class="card-text latest-event-p">A comprehensive summit delving into the potential of blockchain technology across various industries i.e, supply chain management.</p>
+                                <NavLink to="/" className="latest-event-link">Read More</NavLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  const data = [
-    {
-      id: 1,
-      heading: 'Speed Programming',
-      description: 'In this competition, participants are given a programming task that they must complete as quickly as possible. The faster they can write the code and get it to run successfully, the higher their score.',
-      // img: <ComputerIcon sx={{ fontSize: 50, color: purple[500] }} />
-      // img:<MdComputer />
-    },
-    {
-      id: 1,
-      heading: 'Speed Debugging',
-      description: 'In this competition, participants are given a piece of code that contains errors, and they have to find and fix them as quickly as possible. The faster they can identify and correct the errors, the higher their score.',
-      // img: <ComputerIcon sx={{ fontSize: 50, color: purple[500] }} />
-      // img:<MdComputer />
-    },
-    {
-      id: 1,
-      heading: 'UI/UX Design ',
-      description: 'In this competition, participants have to create a user interface that is both visually appealing and easy to use. This competition is perfect for those who have an eye for design.',
-      // img: <ComputerIcon sx={{ fontSize: 50, color: purple[500] }} />
-      // img:<MdComputer />
-    },
-  ]
-
-  return (
-    <>
-      <div className='comp_main'>
-
-
-
-        <Slide left>
-          <main>
-            <div className="main_card">
-              <h2>Koderz Competitons</h2>
-              <p>Here are some of our Competitions Disciplines</p>
             </div>
-
-            {
-              data.map((h => {
-                return (
-
-                  <div class="card">
-                    <div className="icon">
-                      {h.img}
-                    </div>
-
-                    <div class="card-content">
-                      <h2>
-                        {h.heading}
-                      </h2>
-                      <p>
-                        {h.description}
-                      </p>
-                    </div>
-
-                  </div>
-                )
-              }))
-            }
-          </main>
-        </Slide>
-
-      </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default Competions
