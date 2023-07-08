@@ -11,7 +11,7 @@ const Contact = ({heading='true'}) => {
                 <div className="container">
                 {
                     heading === 'true' &&  <div className="col">
-                        <h1 className='main-event-heading fw-bold'>Latest Events</h1>
+                        <h1 className='main-contact-heading fw-bold'>Contact Us</h1>
                     </div>
                 }
                     <div className="row mx-auto">
