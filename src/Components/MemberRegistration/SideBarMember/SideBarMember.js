@@ -14,7 +14,7 @@ const Sidebar = () => {
                     <p className='member-sidebar-para'>Become the part of the Biggest Coding Community of NED.</p>
                     <NavLink to='/team'
                     ><button className='my-sidebar-member-btn'>Our Team</button>
-                    </NavLink>
+                    </NavLink>                   
                 </div>
             </div>
         </>

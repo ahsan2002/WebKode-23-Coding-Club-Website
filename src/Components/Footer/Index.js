@@ -68,7 +68,7 @@ const Index = () => {
                         <div className='thirdCol-inner-div'>
                             <i className="bi bi-telephone pe-2"></i> 0315-8951125<br />
                             <i className="bi bi-envelope pe-2"></i> koder_club@gmail.com<br />
-                            <i className="bi bi-globe pe-2"></i> STForce.surge.sh<br />
+                            <i className="bi bi-globe pe-2"></i>koderzKlub.com<br />
                             <i className="bi bi-geo-alt pe-2"></i>CSIT Department,Main University Rd, NED University Of Engineering & Technology, Karachi,
                             Karachi City, Sindh 75270
                             <iframe className="d-flex my-4 mx-auto"
