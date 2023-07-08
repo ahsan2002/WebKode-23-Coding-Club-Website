@@ -10,7 +10,9 @@ const Contact = ({heading='true'}) => {
             <section className="contactus-section">
                 <div className="container">
                 {
-                    heading === 'true' &&  <h1 className='main-contact-heading fw-bold'>Our Sponsers</h1>
+                    heading === 'true' &&  <div className="col">
+                        <h1 className='main-event-heading fw-bold'>Latest Events</h1>
+                    </div>
                 }
                     <div className="row mx-auto">
                         <div className="col-12 col-lg-12 mx-auto">

@@ -11,7 +11,7 @@ const Competions = () => {
             <div className='container aligncenter flex-column' style={{marginTop:'50px'}}>
                 <div className="row row-upper w-100">
                     <div className="col">
-                        <h1 className='main-sponser-heading fw-bold'>Latest Events</h1>
+                        <h1 className='main-event-heading fw-bold'>Latest Events</h1>
                         <p className='fs-4 my-4' style={{ textAlign: "justify" }}>Explore the cutting-edge world of RCai with the latest updates on groundbreaking advancements, innovative applications, and transformative breakthroughs. Discover the future of artificial intelligence and robotics on our website.</p>
                     </div>
                     <div className="col">
