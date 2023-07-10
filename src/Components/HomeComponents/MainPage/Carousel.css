@@ -39,7 +39,6 @@ span.title {
 
 
 .my-btn-carousel{
-    color: white;
     background: linear-gradient(to right, #141e30, #243b55);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border: 2px solid #fff;
@@ -52,6 +51,7 @@ span.title {
     transition: width 1s ease;
     width: 14rem !important;
     font-size: 1.5rem;
+    color: white;
 }
 
 .carousel-slide.active {
