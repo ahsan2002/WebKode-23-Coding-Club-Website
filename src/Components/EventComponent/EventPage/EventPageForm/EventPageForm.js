@@ -78,6 +78,7 @@ const EventPageForm = ({ heading }) => {
                 pauseOnHover
                 theme="dark"
             /> */}
+
             <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="registerModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
@@ -132,18 +133,17 @@ const EventPageForm = ({ heading }) => {
                                                         id="teamname"
                                                         placeholder='Team Name'
                                                         autocomplete="off"
-                                                        required='true'
                                                         className='event-register-input'
                                                         value={myFormik.values.teamname}
                                                         onChange={myFormik.handleChange}
                                                     />
                                                     <span class="event-register-separator"> </span>
-                                                    {/* {
+                                                    {
                                                     (myFormik.touched.teamname && Boolean(myFormik.errors.teamname)) ?
                                                         <span style={{ color: "red" }}>{myFormik.errors.teamname}</span>
                                                         :
                                                         null
-                                                } */}
+                                                }
                                                 </div>
                                                 <div className="col-12 col-lg-6 ">
                                                     <input type="email"
@@ -281,7 +281,7 @@ const EventPageForm = ({ heading }) => {
                                             <button
                                                 type="submit"
                                                 className="event-register-btn"
-                                                data-bs-dismiss="modal"
+                                                // data-bs-dismiss="modal"
                                             >
                                                 Submit
                                             </button>
