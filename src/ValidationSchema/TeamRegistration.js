@@ -17,7 +17,7 @@ export const TeamRegistrationSchema = yup.object({
   phone: yup
     .number('Enter a valid number')
     .positive('')
-    .required('product description is required'),
+    .required('phone number is required'),
 
   memberonename: yup
     .string()
