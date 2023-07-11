@@ -4,6 +4,9 @@ import Slide from 'react-reveal'
 import { convertToBase64 } from '../../../helper/convertToBase64';
 import { useFormik } from 'formik';
 import { MemberRegistrationSchema } from '../../../ValidationSchema/MemberRegistration';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
 
@@ -14,31 +17,56 @@ const Form = () => {
     }
 
 
-    const MemberInitialValues= {
+    const MemberInitialValues = {
+        profileImage: '',
         firstname: '',
         lastname: '',
-        memberemail: '',
-        memberPhone:'',
-        university:'',
-        discipline:'',
-        shortbio:'',
+        email: '',
+        phone: '',
+        university: '',
+        discipline: '',
+        shortbio: '',
     }
 
     const memberFormik = useFormik({
-        initialValues:MemberInitialValues,
-        validationSchema:MemberRegistrationSchema,
-          
-        onSubmit: (values) => {
+        initialValues: MemberInitialValues,
+        validationSchema: MemberRegistrationSchema,
+
+        onSubmit: async (values, { resetForm }) => {
             console.log('testing')
             console.log("values: ", values);
+            values = Object.assign(values, { profileImage: file || " " })
+            await axios.post('http://localhost:8080/api/team', values)
+
+                .then(response => {
+                    console.log("response: ", response.data);
+                    resetForm();
+                    toast.success(`${response.data.msg}`)
+                })
+                .catch((err) => {
+                    toast.error(`${err.response.data.error}`)
+                    console.log("error: ", err);
+                })
         },
     }
-    
+
     );
     console.log(memberFormik.errors)
 
     return (
         <>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
             <Slide right>
                 <section className="member-section">
                     <div className="row mx-auto">
@@ -51,11 +79,16 @@ const Form = () => {
                                         </label>
                                         <input
                                             className='image_choose d-none'
-                                            name='member-img' id='member-img'
+                                            name='profileImage' id='member-img'
                                             type="file"
-                                            required={true}
                                             onChange={onUploadPicHandler} />
                                     </div>
+                                        {
+                                            (memberFormik.touched.profileImage && Boolean(memberFormik.errors.profileImage)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.profileImage}</span>
+                                                :
+                                                null
+                                        }
                                     <div className="col-12 col-lg-6 ">
                                         <input type="text"
                                             name="firstname"
@@ -67,6 +100,12 @@ const Form = () => {
                                             onChange={memberFormik.handleChange}
                                         />
                                         <span class="separator"> </span>
+                                        {
+                                            (memberFormik.touched.firstname && Boolean(memberFormik.errors.firstname)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.firstname}</span>
+                                                :
+                                                null
+                                        }
                                     </div>
                                     <div className="col-12 col-lg-6 ">
                                         <input type="text"
@@ -78,33 +117,51 @@ const Form = () => {
                                             onChange={memberFormik.handleChange}
                                         />
                                         <span class="separator"> </span>
+                                        {
+                                            (memberFormik.touched.lastname && Boolean(memberFormik.errors.lastname)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.lastname}</span>
+                                                :
+                                                null
+                                        }
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-12 col-lg-6 ">
                                         <input type="email"
-                                            name="memberemail"
-                                            id="memberemail"
+                                            name="email"
+                                            id="email"
                                             placeholder='Email'
                                             autoComplete="off"
                                             className='my_input'
-                                            value={memberFormik.values.memberemail}
+                                            value={memberFormik.values.email}
                                             onChange={memberFormik.handleChange}
                                         />
                                         <span class="separator"> </span>
+                                        {
+                                            (memberFormik.touched.email && Boolean(memberFormik.errors.email)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.email}</span>
+                                                :
+                                                null
+                                        }
                                     </div>
                                     <div className="col-12 col-lg-6 ">
                                         <input type="text"
-                                            name="memberPhone"
-                                            id="memberPhone"
+                                            name="phone"
+                                            id="phone"
                                             placeholder='Phone Number'
                                             autoComplete="off"
                                             className='my_input'
-                                            value={memberFormik.values.memberPhone}
+                                            value={memberFormik.values.phone}
                                             onChange={memberFormik.handleChange}
                                         />
                                         <span class="separator"> </span>
+                                        {
+                                            (memberFormik.touched.phone && Boolean(memberFormik.errors.phone)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.phone}</span>
+                                                :
+                                                null
+                                        }
                                     </div>
                                 </div>
                                 <div className="row">
@@ -119,6 +176,12 @@ const Form = () => {
                                             onChange={memberFormik.handleChange}
                                         />
                                         <span class="separator"> </span>
+                                        {
+                                            (memberFormik.touched.university && Boolean(memberFormik.errors.university)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.university}</span>
+                                                :
+                                                null
+                                        }
                                     </div>
                                 </div>
                                 <div className="row">
@@ -133,11 +196,17 @@ const Form = () => {
                                             onChange={memberFormik.handleChange}
                                         />
                                         <span class="separator"> </span>
+                                        {
+                                            (memberFormik.touched.discipline && Boolean(memberFormik.errors.discipline)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.discipline}</span>
+                                                :
+                                                null
+                                        }
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-12 col-lg-12">
-                                        <input type="text"
+                                        <textarea type="text"
                                             name="shortbio"
                                             id="shortbio"
                                             placeholder='Enter your Short Bio'
@@ -146,6 +215,12 @@ const Form = () => {
                                             onChange={memberFormik.handleChange}
                                         />
                                         <span class="separator"> </span>
+                                        {
+                                            (memberFormik.touched.shortbio && Boolean(memberFormik.errors.shortbio)) ?
+                                                <span style={{ color: "red" }}>{memberFormik.errors.shortbio}</span>
+                                                :
+                                                null
+                                        }
                                     </div>
                                 </div>
                                 <div class="form-check form-checkbox-style" style={{ textAlign: "left" }}>

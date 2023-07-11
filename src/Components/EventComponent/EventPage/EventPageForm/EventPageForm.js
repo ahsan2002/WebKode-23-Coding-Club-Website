@@ -29,23 +29,10 @@ const EventPageForm = ({ heading }) => {
         initialValues: TeamInitialValues,
         validationSchema: TeamRegistrationSchema,
 
-        onSubmit: (values, { resetForm }) => {
+        onSubmit: async (values, { resetForm }) => {
             console.log(values)
-            axios.post(`http://localhost:8080/registeration`, {
-                teamname: values.teamname,
-                email: values.email,
-                phone: values.phone,
-                memberonename: values.memberonename,
-                memberoneuni: values.memberoneuni,
 
-                // membertwoname: values.membertwoname,
-                // membertwouni: values.membertwouni,
-                // memberthreename: values.memberthreename,
-                // memberthreeuni: values.memberthreeuni,
-
-                regtype: values.regtype,
-                couponcode: values.couponcode
-            })
+            await axios.post('http://localhost:8080/api/registeration', values)
                 .then(response => {
                     console.log("response: ", response.data);
                     resetForm();
@@ -54,6 +41,7 @@ const EventPageForm = ({ heading }) => {
 
                 })
                 .catch(err => {
+                    toast.error(`${err.response.data.error}`)
                     console.log("error: ", err);
                 })
 
@@ -66,7 +54,7 @@ const EventPageForm = ({ heading }) => {
 
     return (
         <>
-            {/* <ToastContainer
+            <ToastContainer
                 position="top-center"
                 autoClose={5000}
                 hideProgressBar={false}
@@ -77,7 +65,7 @@ const EventPageForm = ({ heading }) => {
                 draggable
                 pauseOnHover
                 theme="dark"
-            /> */}
+            />
 
             <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="registerModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -90,7 +78,7 @@ const EventPageForm = ({ heading }) => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12 col-lg-11 col-md-11 mx-auto">
-                                        <form onSubmit={myFormik.handleSubmit} >
+                                        <form onSubmit={myFormik.handleSubmit} method='POST' >
 
                                             <div className="row" style={{ padding: "1.5rem 0rem" }}>
                                                 <div className="d-flex justify-content-center align-items-center col-12 col-lg-6" style={{ gap: "10px" }}>
@@ -119,12 +107,12 @@ const EventPageForm = ({ heading }) => {
                                                     />
                                                     <label class="form-check-label event-register-radio-label" for="teamcategory">As Team</label>
                                                 </div>
-                                                {/* {
+                                                {
                                                     (myFormik.touched.regtype && Boolean(myFormik.errors.regtype)) ?
                                                         <span style={{ color: "red" }}>{myFormik.errors.regtype}</span>
                                                         :
                                                         null
-                                                } */}
+                                                }
                                             </div>
                                             <div className="row">
                                                 <div className="col-12 col-lg-6 ">
@@ -139,11 +127,11 @@ const EventPageForm = ({ heading }) => {
                                                     />
                                                     <span class="event-register-separator"> </span>
                                                     {
-                                                    (myFormik.touched.teamname && Boolean(myFormik.errors.teamname)) ?
-                                                        <span style={{ color: "red" }}>{myFormik.errors.teamname}</span>
-                                                        :
-                                                        null
-                                                }
+                                                        (myFormik.touched.teamname && Boolean(myFormik.errors.teamname)) ?
+                                                            <span style={{ color: "red" }}>{myFormik.errors.teamname}</span>
+                                                            :
+                                                            null
+                                                    }
                                                 </div>
                                                 <div className="col-12 col-lg-6 ">
                                                     <input type="email"
@@ -157,6 +145,12 @@ const EventPageForm = ({ heading }) => {
                                                         onChange={myFormik.handleChange}
                                                     />
                                                     <span class="event-register-separator"> </span>
+                                                    {
+                                                        (myFormik.touched.email && Boolean(myFormik.errors.email)) ?
+                                                            <span style={{ color: "red" }}>{myFormik.errors.email}</span>
+                                                            :
+                                                            null
+                                                    }
                                                 </div>
 
                                             </div>
@@ -173,6 +167,12 @@ const EventPageForm = ({ heading }) => {
                                                         onChange={myFormik.handleChange}
                                                     />
                                                     <span class="event-register-separator"> </span>
+                                                    {
+                                                        (myFormik.touched.phone && Boolean(myFormik.errors.phone)) ?
+                                                            <span style={{ color: "red" }}>{myFormik.errors.phone}</span>
+                                                            :
+                                                            null
+                                                    }
                                                 </div>
                                                 <div className="col-12 col-lg-6 ">
                                                     <input type="text"
@@ -203,6 +203,12 @@ const EventPageForm = ({ heading }) => {
 
                                                     />
                                                     <span class="event-register-separator"> </span>
+                                                    {
+                                                        (myFormik.touched.memberonename && Boolean(myFormik.errors.memberonename)) ?
+                                                            <span style={{ color: "red" }}>{myFormik.errors.memberonename}</span>
+                                                            :
+                                                            null
+                                                    }
                                                 </div>
                                                 <div className="col-12 col-lg-6 ">
                                                     <input type="text"
@@ -215,6 +221,12 @@ const EventPageForm = ({ heading }) => {
 
                                                     />
                                                     <span class="event-register-separator"> </span>
+                                                    {
+                                                        (myFormik.touched.memberoneuni && Boolean(myFormik.errors.memberoneuni)) ?
+                                                            <span style={{ color: "red" }}>{myFormik.errors.memberoneuni}</span>
+                                                            :
+                                                            null
+                                                    }
                                                 </div>
                                             </div>
                                             {
@@ -281,7 +293,7 @@ const EventPageForm = ({ heading }) => {
                                             <button
                                                 type="submit"
                                                 className="event-register-btn"
-                                                // data-bs-dismiss="modal"
+                                            // data-bs-dismiss="modal"
                                             >
                                                 Submit
                                             </button>

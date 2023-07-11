@@ -8,7 +8,7 @@ const Header = () => {
     const [isVisible, setVisible] = useState(false);
 
     const listenToScroll = () => {
-        let heightScroll = 250; // apko kb ussy display krana woh value
+        let heightScroll = 500; // apko kb ussy display krana woh value
         const windowScroll =
             (document.body.scrollTop || document.documentElement.scrollTop); // ap kitna scroll krchuky woh btaega
         if (windowScroll > heightScroll) {
