@@ -41,6 +41,7 @@ const Form = () => {
                 .then(response => {
                     console.log("response: ", response.data);
                     resetForm();
+                    setFile("/images/person.png")
                     toast.success(`${response.data.msg}`)
                 })
                 .catch((err) => {
@@ -65,7 +66,7 @@ const Form = () => {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
-                theme="dark"
+                theme="light"
             />
             <Slide right>
                 <section className="member-section">
@@ -83,12 +84,12 @@ const Form = () => {
                                             type="file"
                                             onChange={onUploadPicHandler} />
                                     </div>
-                                        {
+                                        {/* {
                                             (memberFormik.touched.profileImage && Boolean(memberFormik.errors.profileImage)) ?
                                                 <span style={{ color: "red" }}>{memberFormik.errors.profileImage}</span>
                                                 :
                                                 null
-                                        }
+                                        } */}
                                     <div className="col-12 col-lg-6 ">
                                         <input type="text"
                                             name="firstname"

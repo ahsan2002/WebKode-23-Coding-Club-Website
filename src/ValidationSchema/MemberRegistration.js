@@ -1,9 +1,6 @@
 import * as yup from "yup";
 
 export const MemberRegistrationSchema = yup.object({
-  profileImage: yup
-    .string()
-    .required('Profile photo is required '),
   firstname: yup
     .string()
     .required('First Name is required'),
