@@ -228,8 +228,7 @@ const Form = () => {
                                     <input
                                         class="form-check-input"
                                         type="checkbox"
-                                        color='purple'
-                                        required={true} />
+                                        color='purple' />
                                     <label class="form-check-label" className='main-work-para'>
                                         I agree that the Koder's Club  may contact me at the
                                         email address or phone number above

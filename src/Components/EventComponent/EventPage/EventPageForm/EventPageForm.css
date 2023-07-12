@@ -12,6 +12,10 @@
     font-size: 2.5rem;
 }
 
+.modal-btn-close:hover{
+    cursor: pointer;
+}
+
 .modal-header .btn-close {
     color: #fff !important;
 }

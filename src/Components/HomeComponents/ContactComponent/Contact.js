@@ -9,11 +9,6 @@ const Contact = ({heading='true'}) => {
         <>
             <section className="contactus-section">
                 <div className="container">
-                {
-                    heading === 'true' &&  <div className="col">
-                        <h1 className='main-contact-heading fw-bold'>Contact Us</h1>
-                    </div>
-                }
                     <div className="row mx-auto">
                         <div className="col-12 col-lg-12 mx-auto">
                             <div className="row mx-auto" style={{ justifyContent: "space-evenly" }}>
@@ -102,6 +97,7 @@ const Contact = ({heading='true'}) => {
                                                     <input type="text"
                                                         name="message"
                                                         id=""
+                                                        autoComplete='off'
                                                         placeholder='Enter your Message'
                                                         className='my_input'
                                                     />

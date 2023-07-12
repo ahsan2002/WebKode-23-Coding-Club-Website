@@ -18,10 +18,12 @@ const Index = () => {
                         <p className="pera-top"
                             style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "justify" }}>A community of like-minded individuals who share a passion for coding. We believe that learning is a lifelong process, and that's why we encourage our members to explore new ideas and technologies.
                         </p>
+                        <NavLink to='/events'>
                         <div className="justify-content-center align-items-center d-flex">
                             <button type="button" className=" my-btn-F btn  px-4"
                                 style={{ borderRadius: "30px" }}>Register</button>
                         </div>
+                        </NavLink>
                     </div>
                     <div className=" secondCol col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Important Links</h3>
@@ -58,7 +60,7 @@ const Index = () => {
                                     type="button"
                                     className="my-btn-F btn px-4"
                                     style={{ borderRadius: "30px" }}
-                                >Join US
+                                >Join Us
                                 </button>
                             </div>
                         </NavLink>

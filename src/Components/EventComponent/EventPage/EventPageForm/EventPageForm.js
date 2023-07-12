@@ -7,6 +7,7 @@ import axios from 'axios';
 import { TeamRegistrationSchema } from '../../../../ValidationSchema/TeamRegistration';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Slide from 'react-reveal'
 
 const EventPageForm = ({ heading }) => {
     const [category, setcategory] = useState(false)
@@ -69,7 +70,7 @@ const EventPageForm = ({ heading }) => {
                 pauseOnHover
                 theme="light"
             />
-
+            
             <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="registerModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                     <div class="modal-content">

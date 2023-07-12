@@ -3,7 +3,6 @@ import Countdown from 'react-countdown';
 
 const EventCountDown = ({ event_Date }) => {
 
-
     // Renderer callback with condition
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
@@ -36,7 +35,8 @@ const EventCountDown = ({ event_Date }) => {
                     </div>
                 </div>
             </>)
-        } else {
+        } 
+        else {
             // Render a countdown
             return (
                 <>

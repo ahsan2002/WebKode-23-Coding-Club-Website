@@ -70,7 +70,7 @@ const AboutSection = () => {
                             const { id, heading, description } = elem;
                             return (
                                 <>
-                                    <Fade left>
+                                    <Fade right>
                                         <div className='menu-tab-div' key={id}>
                                             <h1 className="main-about-heading">
                                                 {heading}

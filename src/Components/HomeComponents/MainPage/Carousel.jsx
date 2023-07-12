@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel.css';
 import { NavLink } from 'react-router-dom';
+import Slide from 'react-reveal'
 
 // const images =
 
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
-        "images/carousel/img1.png",
+        "images/carousel/img1.jpg",
         "images/carousel/img2.jpg",
         "images/carousel/img3.jpg",
     ];
@@ -39,6 +40,7 @@ const Carousel = () => {
 
                     <div className={`carousel-content-container ${index === currentSlide ? 'active' : ''}`}>
                         <div className="carousel-content">
+                    <Slide top>
                             <h1 className='title' > WELCOME TO
                                 <span
                                     style={{
@@ -47,26 +49,20 @@ const Carousel = () => {
                                     className='title'
                                 > KODERZ KLUB</span></h1>
                             <div className='subHeading'>Innovation | Inspiration | Impact</div>
-
+                            </Slide>
+                            
+                            <Slide bottom>
                             <div className="carousel-button-container">
-                                <NavLink to='/contact-us'>
-                                    <div className="justify-content-center align-items-center d-flex">
-                                        <button type="button" className="my-btn-carousel btn  px-4"
-                                            style={{ borderRadius: "7px" }}>Register</button>
-                                    </div>
+                                <NavLink to='/events'>
+                                <button className='my-btn-C'>Register</button>
                                 </NavLink>
                                 <NavLink to='/member-registration'>
-                                    <div className="justify-content-center align-items-center d-flex">
-                                        <button
-                                            type="button"
-                                            className="my-btn-carousel btn px-4"
-                                            style={{ borderRadius: "7px" }}
-                                        >Join Us
-                                        </button>
-                                    </div>
+                                <button className='my-btn-C'>Join Us</button>
                                 </NavLink>
                             </div>
+                            </Slide>
                         </div>
+                        
 
 
                     </div>
