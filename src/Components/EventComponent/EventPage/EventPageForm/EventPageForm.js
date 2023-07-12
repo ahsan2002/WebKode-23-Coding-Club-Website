@@ -10,7 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const EventPageForm = ({ heading }) => {
     const [category, setcategory] = useState(false)
-    const [dismissModal, setdisModal] = useState('')
 
     const TeamInitialValues = {
         regtype: '',
@@ -37,13 +36,11 @@ const EventPageForm = ({ heading }) => {
                 .then(response => {
                     console.log("response: ", response.data);
                     resetForm();
-                    setdisModal('modal')
                     toast.success(`${response.data.msg}`)
 
 
                 })
                 .catch(err => {
-                    setdisModal('')
                     toast.error(`${err.response.data.error}`)
                     console.log("error: ", err);
                 })
@@ -296,7 +293,7 @@ const EventPageForm = ({ heading }) => {
                                             <button
                                                 type="submit"
                                                 className="event-register-btn"
-                                                data-bs-dismiss={dismissModal}
+                                                // data-bs-dismiss={dismissModal}
                                             >
                                                 Submit
                                             </button>

@@ -1,19 +1,14 @@
-import {React,useEffect} from 'react'
+import { React, useEffect } from 'react'
 import './Contact.css'
 import Slide from 'react-reveal'
 
-const Contact = ({heading='true'}) => {
-    
-    
+const Contact = ({ heading = 'true' }) => {
+
+
     return (
         <>
             <section className="contactus-section">
                 <div className="container">
-                {
-                    heading === 'true' &&  <div className="col">
-                        <h1 className='main-contact-heading fw-bold'>Contact Us</h1>
-                    </div>
-                }
                     <div className="row mx-auto">
                         <div className="col-12 col-lg-12 mx-auto">
                             <div className="row mx-auto" style={{ justifyContent: "space-evenly" }}>
